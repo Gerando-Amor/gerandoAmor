@@ -30,10 +30,18 @@ Para executar este projeto localmente, siga estas etapas:
    ```bash
    cd gerando-amor
 
-4. **Instalar as dependências:** Execute o seguinte comando para instalar as dependências do projeto:
+3. **Instalar as dependências:** Execute o seguinte comando para instalar as dependências do projeto:
+
    ```bash
    npm install
 
+4. **Iniciar o aplicativo:** Após a instalação ser concluída, inicie o aplicativo React:
 
- 
+   ```bash
+   npm start
+
+5. **Abrir o aplicativo no navegador:** Uma vez que o aplicativo esteja em execução, abra o navegador e acesse http://localhost:3000/ para acessar o aplicativo.
+
+
+ Obrigado por contribuir para a missão da ONG Gerando Amor! Juntos, podemos fazer a diferença.
 
