@@ -22,10 +22,6 @@
     padding-bottom: 5%;
 }
 
-.item a:focus{
-    border-bottom: 2px solid #ffbb33;
-}
-
 .activeLink {
     border-bottom: 2px solid #ffbb33;
   }
@@ -46,4 +42,3 @@
 .navBarr h1 span{
     color: #ffbb33;
 }
-
