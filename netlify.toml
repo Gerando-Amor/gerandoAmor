@@ -1,4 +1,3 @@
 [build]
-  base = "gerando-amor" # O diretório onde está o seu projeto React
   command = "npm run build" # O comando para construir o seu projeto
   publish = "build" # O diretório onde o resultado da construção será colocado
