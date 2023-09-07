@@ -19,12 +19,18 @@
 .item a {
     color: #fff;
     text-decoration: none;
+    padding-bottom: 5%;
 }
 
-.item a:hover{
-    color: #ffbb33;
+.item a:focus{
+    border-bottom: 2px solid #ffbb33;
 }
 
+.activeLink {
+    border-bottom: 2px solid #ffbb33;
+    /* Outros estilos para o link da página atual, se necessário */
+  }
+  
 .navBarr {
     text-decoration: none;
     display: flex;
@@ -40,6 +46,5 @@
 
 .navBarr h1 span{
     color: #ffbb33;
-
 }
 
