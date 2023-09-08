@@ -26,13 +26,15 @@ function Navbar() {
     };
   }, []);
 
+  function abrirmenu(){};
+
   return (
     <nav className={styles.navbar}>
       <Container>
 
         <Link className={styles.navIcon} to="/">
           <div>
-            <img className={styles.img} src={logo} alt="Logo"/>
+            <img className={styles.img} src={logo} alt="Logo" />
           </div>
           <div>
             <h1>
@@ -41,7 +43,7 @@ function Navbar() {
           </div>
         </Link>
         {
-          isDesktop?
+          isDesktop ?
 
             (
               <ul className={styles.list}>
@@ -89,7 +91,14 @@ function Navbar() {
             )
             :
             (
-              <div></div>
+              <div className={styles.list}> 
+                <label className={styles.listIcon} htmlFor="check">
+                  <input type="checkbox" onChange={abrirmenu} id="check" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
             )
         }
       </Container>
