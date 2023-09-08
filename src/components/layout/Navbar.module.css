@@ -1,19 +1,43 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
-    background-color:#222;
-    padding: 1em; 
+    padding: 1em 0;
+    background-color: #222;
 }
 
+/* Logo marca com icone gerando amor */
+.navIcon {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.navIcon h1 {
+    padding-left: 30px;
+    font-size: 2rem;   
+}
+
+.navIcon h1 span {
+    color: #ffbb33;
+}
+
+.img{
+    width: 60px;
+}
+/* fim do css da Logomarca */
+
+
+/* desktop list */
 .list {
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.item{
-    margin-right: 1em;
-    font-size: 1.5rem;
+.item {
+    margin: 0 1em;
+    font-size: 1.3rem;
 }
 
 .item a {
@@ -24,21 +48,7 @@
 
 .activeLink {
     border-bottom: 2px solid #ffbb33;
-  }
-  
-.navBarr {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin:  0 30px;
-    color: #fff;
 }
 
-.navBarr h1 {
-    padding-left: 30px;
-    font-size: 2rem;
-}
+/* fim desktop list */
 
-.navBarr h1 span{
-    color: #ffbb33;
-}
