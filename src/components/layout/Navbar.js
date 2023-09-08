@@ -34,12 +34,12 @@ function Navbar() {
           </li>
           <li className={styles.item}>
             <Link
-              to="/Projects"
+              to="/projects"
               className={classNames(styles.link, {
-                [styles.activeLink]: location.pathname === "/Projects",
+                [styles.activeLink]: location.pathname === "/projects",
               })}
             >
-              Contato
+              Projetos
             </Link>
           </li>
           <li className={styles.item}>
@@ -49,14 +49,14 @@ function Navbar() {
                 [styles.activeLink]: location.pathname === "/contact",
               })}
             >
-              Sobre
+              Contato
             </Link>
           </li>
           <li className={styles.item}>
             <Link
-              to="/company"
+              to="/location"
               className={classNames(styles.link, {
-                [styles.activeLink]: location.pathname === "/company",
+                [styles.activeLink]: location.pathname === "/location",
               })}
             >
               Localização
