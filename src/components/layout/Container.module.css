@@ -1,10 +1,10 @@
 .container {
     width: 1200px;
+    padding: 0 2%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
-    
 }
 
 .min-height {
@@ -13,7 +13,6 @@
 
 .start {
     justify-content: flex-start;
-
 }
 
 .column {

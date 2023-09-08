@@ -1,19 +1,43 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
-    background-color:#222;
-    padding: 1em; 
+    padding: 1em 0;
+    background-color: #222;
 }
 
+/* Logo marca com icone gerando amor */
+.navIcon {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.navIcon h1 {
+    padding-left: 30px;
+    font-size: 2rem;   
+}
+
+.navIcon h1 span {
+    color: #ffbb33;
+}
+
+.img{
+    width: 60px;
+}
+/* fim do css da Logomarca */
+
+
+/* desktop list */
 .list {
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.item{
-    margin-right: 1em;
-    font-size: 1.5rem;
+.item {
+    margin: 0 1em;
+    font-size: 1.3rem;
 }
 
 .item a {
@@ -24,21 +48,72 @@
 
 .activeLink {
     border-bottom: 2px solid #ffbb33;
-  }
-  
-.navBarr {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin:  0 30px;
-    color: #fff;
 }
 
-.navBarr h1 {
-    padding-left: 30px;
-    font-size: 2rem;
+/* fim desktop list */
+/* List Icon */
+.listIcon{
+    display:flex;
+    flex-direction:column;
+    width: 30px;
+    cursor:pointer;
+    align-items: flex-end;
+}
+   
+.listIcon span{
+    background: #ffbb33;
+    border-radius:10px;
+    height: 4px;
+    margin: 3px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+   
+   
+.listIcon span:nth-of-type(1){
+    width:50%;   
+}
+   
+.listIcon span:nth-of-type(2){
+    width:100%;
+}
+   
+   
+.listIcon span:nth-of-type(3){
+    width:75%; 
+}
+   
+   
+.listIcon input[type="checkbox"]{
+    display:none;
 }
 
-.navBarr h1 span{
-    color: #ffbb33;
+
+.listIcon input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(0px, 10px);
+    opacity: 0;
 }
+
+
+.listIcon input[type="checkbox"]:checked ~ span:nth-of-type(2){   
+    transform-origin:top;
+    transform:rotatez(-45deg);
+    width: 100%;
+}
+
+
+.listIcon input[type="checkbox"]:checked ~ span:nth-of-type(3){  
+    transform-origin:bottom;
+    width:100%;
+    transform: translate( 0px,-11px) rotatez(45deg);
+}
+/* fim icon menu */
+
+@media screen and (max-width: 1023px) {
+    .img{width: 40px;}
+    .navIcon h1 {
+        padding-left: 15px;
+        font-size: 1.4rem;   
+    }
+}
+

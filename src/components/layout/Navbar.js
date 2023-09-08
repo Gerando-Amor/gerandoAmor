@@ -2,16 +2,37 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Container from "./Container";
 import styles from "./Navbar.module.css";
-import logo from "../img/Logo.png";
+import logo from "../img/Logo1.png";
 import classNames from "classnames";
+import { useState, useEffect } from 'react';
 
 function Navbar() {
   const location = useLocation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const isDesktop = windowWidth >= 1023;
+
+
+  useEffect(() => {
+    // Atualize a largura da janela quando a janela for redimensionada
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      // Remova o ouvinte de redimensionamento quando o componente for desmontado
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  function abrirmenu(){};
 
   return (
     <nav className={styles.navbar}>
       <Container>
-        <Link className={styles.navBarr} to="/">
+
+        <Link className={styles.navIcon} to="/">
           <div>
             <img className={styles.img} src={logo} alt="Logo" />
           </div>
@@ -21,48 +42,65 @@ function Navbar() {
             </h1>
           </div>
         </Link>
-        <ul className={styles.list}>
-          <li className={styles.item}>
-            <Link
-              to="/"
-              className={classNames(styles.link, {
-                [styles.activeLink]: location.pathname === "/",
-              })}
-            >
-              Home
-            </Link>
-          </li>
-          <li className={styles.item}>
-            <Link
-              to="/Projects"
-              className={classNames(styles.link, {
-                [styles.activeLink]: location.pathname === "/Projects",
-              })}
-            >
-              Contato
-            </Link>
-          </li>
-          <li className={styles.item}>
-            <Link
-              to="/contact"
-              className={classNames(styles.link, {
-                [styles.activeLink]: location.pathname === "/contact",
-              })}
-            >
-              Sobre
-            </Link>
-          </li>
-          <li className={styles.item}>
-            <Link
-              to="/company"
-              className={classNames(styles.link, {
-                [styles.activeLink]: location.pathname === "/company",
-              })}
-            >
-              Localização
-            </Link>
-          </li>
-        </ul>
+        {
+          isDesktop ?
+
+            (
+              <ul className={styles.list}>
+                <li className={styles.item}>
+                  <Link
+                    to="/"
+                    className={classNames(styles.link, {
+                      [styles.activeLink]: location.pathname === "/",
+                    })}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className={styles.item}>
+                  <Link
+                    to="/projects"
+                    className={classNames(styles.link, {
+                      [styles.activeLink]: location.pathname === "/projects",
+                    })}
+                  >
+                    Projetos
+                  </Link>
+                </li>
+                <li className={styles.item}>
+                  <Link
+                    to="/contact"
+                    className={classNames(styles.link, {
+                      [styles.activeLink]: location.pathname === "/contact",
+                    })}
+                  >
+                    Contato
+                  </Link>
+                </li>
+                <li className={styles.item}>
+                  <Link
+                    to="/location"
+                    className={classNames(styles.link, {
+                      [styles.activeLink]: location.pathname === "/location",
+                    })}
+                  >
+                    Localização
+                  </Link>
+                </li>
+              </ul>
+            )
+            :
+            (
+              <div className={styles.list}> 
+                <label className={styles.listIcon} htmlFor="check">
+                  <input type="checkbox" onChange={abrirmenu} id="check" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+            )
+        }
       </Container>
     </nav>
   );
