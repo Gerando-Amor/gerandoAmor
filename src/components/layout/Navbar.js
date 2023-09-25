@@ -10,14 +10,14 @@ function Navbar() {
   const location = useLocation();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const isDesktop = windowWidth >= 1023;
-
+  const [submenuAberto, setSubmenuAberto] = useState(false);
 
   useEffect(() => {
     // Atualize a largura da janela quando a janela for redimensionada
     function handleResize() {
       setWindowWidth(window.innerWidth);
     }
-
+    
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -26,7 +26,14 @@ function Navbar() {
     };
   }, []);
 
-  function abrirmenu(){};
+  function abrirmenu() { };
+  const abrirSubmenu = () => {
+    if (!submenuAberto){
+    setSubmenuAberto(true);}
+    else{
+    setSubmenuAberto(false);}
+  };
+
 
   return (
     <nav className={styles.navbar}>
@@ -51,12 +58,58 @@ function Navbar() {
                   <Link
                     to="/"
                     className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/",
-                    })}
+                      [styles.activeLink]: location.pathname === "/" && !submenuAberto})}
+                    onClick={location.pathname === "/" ? abrirSubmenu : null}
                   >
                     Home
                   </Link>
+                  <ul className={classNames(styles.submenu, {[styles.submenuAtivo]: location.pathname === "/" && submenuAberto})}>
+
+                    <li className={styles.item}>
+                      <Link
+                        to="/#quemsomos"
+                        className={classNames(styles.link, {
+                          [styles.activeSubLink]: location.hash === "#quemsomos",
+                        })}
+                      >
+                        Quem Somos
+                      </Link>
+                    </li>
+
+                    <li className={styles.item}>
+                      <Link
+                        to="/#comotransformamos"
+                        className={classNames(styles.link, {
+                          [styles.activeSubLink]: location.hash === "#comotransformamos",
+                        })}
+                      >
+                        Como Transformamos
+                      </Link>
+                    </li>
+                    <li className={styles.item}>
+                      <Link
+                        to="/#misao"
+                        className={classNames(styles.link, {
+                          [styles.activeSubLink]: location.hash === "#misao",
+                        })}
+                      >
+                        Misão
+                      </Link>
+                    </li>
+                    <li className={styles.item}>
+                      <Link
+                        to="/#objetivo"
+                        className={classNames(styles.link, {
+                          [styles.activeSubLink]: location.hash === "#objetivo",
+                        })}
+                      >
+                        Objetivo
+                      </Link>
+                    </li>
+
+                  </ul>
                 </li>
+
                 <li className={styles.item}>
                   <Link
                     to="/projects"
@@ -91,7 +144,7 @@ function Navbar() {
             )
             :
             (
-              <div className={styles.list}> 
+              <div className={styles.list}>
                 <label className={styles.listIcon} htmlFor="check">
                   <input type="checkbox" onChange={abrirmenu} id="check" />
                   <span></span>

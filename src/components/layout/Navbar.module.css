@@ -1,5 +1,6 @@
 .navbar {
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding: 1em 0;
     background-color: #222;
@@ -117,3 +118,39 @@
     }
 }
 
+
+
+/* SUb Menu */
+.submenu{
+    display: none;
+    position: absolute;
+    color: white;
+    list-style: none;
+    top: 70%;
+    background-color: #222;
+    padding-inline-start: 0px;
+    padding: 10px 0 20px 0;
+    border-top: 2px solid #ffbb33;
+}
+.submenu li{
+    padding: 3px 0;
+}
+.submenuAtivo{
+    display: block;
+    transition: 0.5s ease;
+    animation: slideup .5s ease;
+}
+.activeSubLink{
+    color: #ffbb33 !important
+}
+@keyframes slideup {
+    0%{
+        opacity: 0;
+        transform: translateY(-18px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
