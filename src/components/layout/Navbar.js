@@ -17,7 +17,7 @@ function Navbar() {
     function handleResize() {
       setWindowWidth(window.innerWidth);
     }
-    
+
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -27,13 +27,13 @@ function Navbar() {
   }, []);
 
   function abrirmenu() { };
-  const abrirSubmenu = () => {
-    if (!submenuAberto){
-    setSubmenuAberto(true);}
-    else{
-    setSubmenuAberto(false);}
-  };
 
+  const abrirSubmenu = () => {
+    setSubmenuAberto(true);
+  };
+  const fecharmenu = () => {
+    setSubmenuAberto(false)
+  }
 
   return (
     <nav className={styles.navbar}>
@@ -54,93 +54,133 @@ function Navbar() {
 
             (
               <ul className={styles.list}>
-                <li className={styles.item}>
+                <li className={styles.item}
+                  onMouseEnter={location.pathname === "/" ? abrirSubmenu : null}
+                  onMouseLeave={location.pathname === "/" ? fecharmenu : null}
+                >
                   <Link
                     to="/"
                     className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/" && !submenuAberto})}
-                    onClick={location.pathname === "/" ? abrirSubmenu : null}
+                      [styles.activeLink]: location.pathname === "/" && !submenuAberto
+                    })}
                   >
                     Home
                   </Link>
-                  <ul className={classNames(styles.submenu, {[styles.submenuAtivo]: location.pathname === "/" && submenuAberto})}>
+                  <ul className={classNames(styles.submenu, { [styles.submenuAtivo]: location.pathname === "/" && submenuAberto })}>
 
                     <li className={styles.item}>
                       <Link
-                        to="/#quemsomos"
+                        to="#quemsomos"
                         className={classNames(styles.link, {
                           [styles.activeSubLink]: location.hash === "#quemsomos",
                         })}
+                        onClick={fecharmenu}
                       >
                         Quem Somos
                       </Link>
                     </li>
-
-                    <li className={styles.item}>
-                      <Link
-                        to="/#comotransformamos"
-                        className={classNames(styles.link, {
-                          [styles.activeSubLink]: location.hash === "#comotransformamos",
-                        })}
-                      >
-                        Como Transformamos
-                      </Link>
-                    </li>
-                    <li className={styles.item}>
-                      <Link
-                        to="/#misao"
-                        className={classNames(styles.link, {
-                          [styles.activeSubLink]: location.hash === "#misao",
-                        })}
-                      >
-                        Misão
-                      </Link>
-                    </li>
-                    <li className={styles.item}>
-                      <Link
-                        to="/#objetivo"
-                        className={classNames(styles.link, {
-                          [styles.activeSubLink]: location.hash === "#objetivo",
-                        })}
-                      >
-                        Objetivo
-                      </Link>
-                    </li>
-
                   </ul>
                 </li>
 
-                <li className={styles.item}>
+
+
+
+
+                <li className={styles.item}
+                  onMouseEnter={location.pathname === "/projects" ? abrirSubmenu : null}
+                  onMouseLeave={location.pathname === "/projects" ? fecharmenu : null}
+                >
                   <Link
                     to="/projects"
                     className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/projects",
+                      [styles.activeLink]: location.pathname === "/projects" && !submenuAberto
                     })}
                   >
                     Projetos
                   </Link>
+                  <ul className={classNames(styles.submenu, { [styles.submenuAtivo]: location.pathname === "/projects" && submenuAberto })}>
+
+                    <li className={styles.item}>
+                      <Link
+                        to="#projetos"
+                        className={classNames(styles.link, {
+                          [styles.activeSubLink]: location.hash === "#projetos"
+                        })}
+                        onClick={fecharmenu}
+                      >
+                        Projetos
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
-                <li className={styles.item}>
+
+
+
+
+                <li className={styles.item}
+                  onMouseEnter={location.pathname === "/contact" ? abrirSubmenu : null}
+                  onMouseLeave={location.pathname === "/contact"? fecharmenu: null}
+                >
                   <Link
                     to="/contact"
                     className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/contact",
+                      [styles.activeLink]: location.pathname === "/contact" && !submenuAberto
                     })}
                   >
                     Contato
                   </Link>
+                  <ul className={classNames(styles.submenu, { [styles.submenuAtivo]: location.pathname === "/contact" && submenuAberto })}>
+
+                    <li className={styles.item}>
+                      <Link
+                        to="#contact"
+                        className={classNames(styles.link, {
+                          [styles.activeSubLink]: location.hash === "#contact"
+                        })}
+                        onClick={fecharmenu}
+                      >
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
-                <li className={styles.item}>
+
+
+
+
+
+                <li className={styles.item}
+                  onMouseEnter={location.pathname === "/location"? abrirSubmenu: null}
+                  onMouseLeave={location.pathname === "/location"? fecharmenu: null}
+                >
                   <Link
                     to="/location"
                     className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/location",
+                      [styles.activeLink]: location.pathname === "/location" && !submenuAberto
                     })}
                   >
                     Localização
                   </Link>
+                  <ul className={classNames(styles.submenu, { [styles.submenuAtivo]: location.pathname === "/location" && submenuAberto })}>
+
+                    <li className={styles.item}>
+                      <Link
+                        to="#location"
+                        className={classNames(styles.link, {
+                          [styles.activeSubLink]: location.hash === "#location"
+                        })}
+                        onClick={fecharmenu}
+                      >
+                        Location
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
+
               </ul>
+
+
+
             )
             :
             (
