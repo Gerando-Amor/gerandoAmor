@@ -1,6 +1,7 @@
 /* desktop list */
 .list {
     display: flex;
+    position: relative;
     list-style: none;
     align-items: center;
 }
@@ -10,7 +11,24 @@
     padding: 20px 25px;
     font-size: 1.3rem;
 }
-
+.item:last-of-type{
+    background-color: #ffbb33;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+.item:last-of-type .submenu{
+    background-color: #ffbb33;
+    text-align: center;
+    right: 0px;
+    border-radius: 0 0 5px 5px
+}
+.item:last-of-type .submenu .activeSubLink{ color: #222 !important;}
+.subitem {
+    /* margin: auto 1em; */
+    padding: 20px 25px;
+    font-size: 1.3rem;
+}
 .item a {
     color: #fff;
     text-decoration: none;
@@ -26,7 +44,7 @@
     position: absolute;
     color: white;
     list-style: none;
-    top: 70%;
+    top: 80%;
     background-color: #222;
     padding-inline-start: 0px;
     padding: 10px 0 20px 0;

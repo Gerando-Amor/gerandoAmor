@@ -21,7 +21,16 @@ const NavigationData = [
         ]
     },
     { id: 3, label: 'Contato', url: '/contact' },
-    { id: 4, label: 'Quero Doar', url: '/doar' }
+    { 
+        id: 4, 
+        label: 'Como Ajudar?', 
+        url: '/comoajudar',
+        submenu: [
+            {id: 40, label: "Doe agora", url: "#doe"},
+            {id: 41, label: "Ser Voluntário", url: "#voluntario"},
+            {id: 42, label: "Realizar Parceria", url: "#parceria"}
+        ]
+    }
     // Adicione mais objetos de menu conforme necessário
   ];
   

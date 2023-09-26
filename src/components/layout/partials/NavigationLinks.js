@@ -23,7 +23,7 @@ function NavigationLink() {
             <ul className={classNames(styles.submenu, { [styles.submenuAtivo]: location.pathname === nav.url && submenuAberto })}>
                 {
                     submenu.map((submenu) => (
-                        <li className={styles.item}>
+                        <li className={styles.subitem}>
                             <Link
                                 to={submenu.url}
                                 className={classNames(styles.link, {
