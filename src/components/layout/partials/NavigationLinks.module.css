@@ -1,0 +1,58 @@
+/* desktop list */
+.list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item {
+    /* margin: auto 1em; */
+    padding: 20px 25px;
+    font-size: 1.3rem;
+}
+
+.item a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 5%;
+}
+
+.activeLink {
+    border-bottom: 2px solid #ffbb33;
+}
+/* Sub Menu */
+.submenu{
+    display: none;
+    position: absolute;
+    color: white;
+    list-style: none;
+    top: 70%;
+    background-color: #222;
+    padding-inline-start: 0px;
+    padding: 10px 0 20px 0;
+    border-top: 2px solid #ffbb33;
+}
+.submenu li{
+    padding: 3px 15px;
+}
+.submenuAtivo{
+    display: block;
+    transition: 0.5s ease;
+    animation: slideup .5s ease;
+}
+.activeSubLink{
+    color: #ffbb33 !important
+}
+
+/* animação */
+@keyframes slideup {
+    0%{
+        opacity: 0;
+        transform: translateY(-18px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}

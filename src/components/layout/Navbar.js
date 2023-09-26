@@ -1,28 +1,25 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
 import Container from "./Container";
 import styles from "./Navbar.module.css";
-import logo from "../img/Logo1.png";
-import classNames from "classnames";
 import { useState, useEffect } from 'react';
-import Nav from "../../Data/NavigationData";
+import Logo from "./partials/Logo";
+import NavigationLink from "./partials/NavigationLinks";
 
 function Navbar() {
-  const location = useLocation();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const isDesktop = windowWidth >= 1023;
-  const [submenuAberto, setSubmenuAberto] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1023);
 
   useEffect(() => {
-    // Atualize a largura da janela quando a janela for redimensionada
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-
+    // ouvinte de redimencionamento que ativa a função handleResize
     window.addEventListener('resize', handleResize);
 
+    // Função que é ativada quando redimencionam a tela
+    function handleResize() {
+      // se o width for maior que 1023 é True
+      setIsDesktop(window.innerWidth >= 1023);
+    }
+
     return () => {
-      // Remova o ouvinte de redimensionamento quando o componente for desmontado
+      // Remove o ouvinte de redimensionamento quando o componente for desmontado
       window.removeEventListener('resize', handleResize);
     };
   }, []);
@@ -31,76 +28,21 @@ function Navbar() {
 
   function abrirmenu() { };
 
-  const abrirSubmenu = () => {
-    setSubmenuAberto(true);
-  };
-  const fecharmenu = () => {
-    setSubmenuAberto(false)
-  }
-  const rendermenu = (submenu, nav) => {
-    return (
-      <ul className={classNames(styles.submenu, { [styles.submenuAtivo]: location.pathname === nav.url && submenuAberto })}>
-        {
-          submenu.map((submenu) => (
-            <li className={styles.item}>
-              <Link
-                to={submenu.url}
-                className={classNames(styles.link, {
-                  [styles.activeSubLink]: location.hash === submenu.url,
-                })}
-                onClick={fecharmenu}
-              >
-                {submenu.label}
-              </Link>
-            </li>
-          ))
-        }
-      </ul>
-    );
-  }
 
   return (
     <nav className={styles.navbar}>
       <Container>
-
-        <Link className={styles.navIcon} to="/">
-          <div>
-            <img className={styles.img} src={logo} alt="Logo" />
-          </div>
-          <div>
-            <h1>
-              Gerando <span>Amor</span>
-            </h1>
-          </div>
-        </Link>
+        <Logo />
         {
           isDesktop ?
 
             (
-              <ul className={styles.list}>
-                {Nav.map((nav) => (
-
-                  <li className={styles.item}
-                    onMouseEnter={location.pathname === nav.url ? abrirSubmenu : null}
-                    onMouseLeave={location.pathname === nav.url ? fecharmenu : null}
-                  >
-                    <Link
-                      to={nav.url}
-                      className={classNames(styles.link, {
-                        [styles.activeLink]: location.pathname === nav.url && !submenuAberto
-                      })}
-                    >
-                      {nav.label}
-                    </Link>
-                    {nav.submenu?.length > 0 && rendermenu(nav.submenu, nav)}
-                  </li>
-                ))}
-              </ul>
+              <NavigationLink />
             )
             :
             (
-              <div className={styles.list}>
-                <label className={styles.listIcon} htmlFor="check">
+              <div className={styles.mobilehamburguer}>
+                <label className={styles.mobileIcon} htmlFor="check">
                   <input type="checkbox" onChange={abrirmenu} id="check" />
                   <span></span>
                   <span></span>
