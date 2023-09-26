@@ -4,7 +4,7 @@ Este é um site institucional web desenvolvido em React para a ONG Gerando Amor.
 
 ## Demonstração
 
-Você pode acessar uma demonstração ao vivo do projeto [aqui](https://www.google.com).
+Você pode acessar uma demonstração ao vivo do projeto [aqui](https://gerando-amor.netlify.app).
 
 ## Contribuição
 
