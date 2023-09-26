@@ -5,54 +5,13 @@
     background-color: #222;
 }
 
-/* Logo marca com icone gerando amor */
-.navIcon {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-
-.navIcon h1 {
-    padding-left: 30px;
-    font-size: 2rem;   
-}
-
-.navIcon h1 span {
-    color: #ffbb33;
-}
-
-.img{
-    width: 60px;
-}
-/* fim do css da Logomarca */
-
-
-/* desktop list */
-.list {
+/* Mobile Hamburguer */
+.mobilehamburguer {
     display: flex;
     list-style: none;
     align-items: center;
 }
-
-.item {
-    margin: 0 1em;
-    font-size: 1.3rem;
-}
-
-.item a {
-    color: #fff;
-    text-decoration: none;
-    padding-bottom: 5%;
-}
-
-.activeLink {
-    border-bottom: 2px solid #ffbb33;
-}
-
-/* fim desktop list */
-/* List Icon */
-.listIcon{
+.mobileIcon{
     display:flex;
     flex-direction:column;
     width: 30px;
@@ -60,7 +19,7 @@
     align-items: flex-end;
 }
    
-.listIcon span{
+.mobileIcon span{
     background: #ffbb33;
     border-radius:10px;
     height: 4px;
@@ -69,51 +28,42 @@
 }
    
    
-.listIcon span:nth-of-type(1){
+.mobileIcon span:nth-of-type(1){
     width:50%;   
 }
    
-.listIcon span:nth-of-type(2){
+.mobileIcon span:nth-of-type(2){
     width:100%;
 }
    
    
-.listIcon span:nth-of-type(3){
+.mobileIcon span:nth-of-type(3){
     width:75%; 
 }
    
    
-.listIcon input[type="checkbox"]{
+.mobileIcon input[type="checkbox"]{
     display:none;
 }
 
 
-.listIcon input[type="checkbox"]:checked ~ span:nth-of-type(1){
+.mobileIcon input[type="checkbox"]:checked ~ span:nth-of-type(1){
     transform-origin:bottom;
     transform:rotatez(45deg) translate(0px, 10px);
     opacity: 0;
 }
 
 
-.listIcon input[type="checkbox"]:checked ~ span:nth-of-type(2){   
+.mobileIcon input[type="checkbox"]:checked ~ span:nth-of-type(2){   
     transform-origin:top;
     transform:rotatez(-45deg);
     width: 100%;
 }
 
 
-.listIcon input[type="checkbox"]:checked ~ span:nth-of-type(3){  
+.mobileIcon input[type="checkbox"]:checked ~ span:nth-of-type(3){  
     transform-origin:bottom;
     width:100%;
     transform: translate( 0px,-11px) rotatez(45deg);
 }
 /* fim icon menu */
-
-@media screen and (max-width: 1023px) {
-    .img{width: 40px;}
-    .navIcon h1 {
-        padding-left: 15px;
-        font-size: 1.4rem;   
-    }
-}
-

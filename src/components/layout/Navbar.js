@@ -1,98 +1,48 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
 import Container from "./Container";
 import styles from "./Navbar.module.css";
-import logo from "../img/Logo1.png";
-import classNames from "classnames";
 import { useState, useEffect } from 'react';
+import Logo from "./partials/Logo";
+import NavigationLink from "./partials/NavigationLinks";
 
 function Navbar() {
-  const location = useLocation();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const isDesktop = windowWidth >= 1023;
-
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1023);
 
   useEffect(() => {
-    // Atualize a largura da janela quando a janela for redimensionada
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-
+    // ouvinte de redimencionamento que ativa a função handleResize
     window.addEventListener('resize', handleResize);
 
+    // Função que é ativada quando redimencionam a tela
+    function handleResize() {
+      // se o width for maior que 1023 é True
+      setIsDesktop(window.innerWidth >= 1023);
+    }
+
     return () => {
-      // Remova o ouvinte de redimensionamento quando o componente for desmontado
+      // Remove o ouvinte de redimensionamento quando o componente for desmontado
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  function abrirmenu(){};
+
+
+  function abrirmenu() { };
+
 
   return (
     <nav className={styles.navbar}>
       <Container>
-
-        <Link className={styles.navIcon} to="/">
-          <div>
-            <img className={styles.img} src={logo} alt="Logo" />
-          </div>
-          <div>
-            <h1>
-              Gerando <span>Amor</span>
-            </h1>
-          </div>
-        </Link>
+        <Logo />
         {
           isDesktop ?
 
             (
-              <ul className={styles.list}>
-                <li className={styles.item}>
-                  <Link
-                    to="/"
-                    className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/",
-                    })}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className={styles.item}>
-                  <Link
-                    to="/projects"
-                    className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/projects",
-                    })}
-                  >
-                    Projetos
-                  </Link>
-                </li>
-                <li className={styles.item}>
-                  <Link
-                    to="/contact"
-                    className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/contact",
-                    })}
-                  >
-                    Contato
-                  </Link>
-                </li>
-                <li className={styles.item}>
-                  <Link
-                    to="/location"
-                    className={classNames(styles.link, {
-                      [styles.activeLink]: location.pathname === "/location",
-                    })}
-                  >
-                    Localização
-                  </Link>
-                </li>
-              </ul>
+              <NavigationLink />
             )
             :
             (
-              <div className={styles.list}> 
-                <label className={styles.listIcon} htmlFor="check">
+              <div className={styles.mobilehamburguer}>
+                <label className={styles.mobileIcon} htmlFor="check">
                   <input type="checkbox" onChange={abrirmenu} id="check" />
                   <span></span>
                   <span></span>
