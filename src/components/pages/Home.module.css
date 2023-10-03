@@ -1,0 +1,61 @@
+.container_caixa {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+}
+
+.caixa_item_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 252px 0px 265px 0px;
+}
+
+.caixa_item {
+    display: flex;
+    width: 50px;
+    height: 370px;
+    background: linear-gradient(180deg, #FCA311 0%, #D78500 52.63%, #462C00 100%);
+    margin-left: -40px;
+    margin-top: 150px;
+}
+
+.caixa {
+    border-radius: 252px 0px 265px 0px;
+    background-image: url(../img/foto.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 590px;
+    height: 522px;
+    padding: 20px;
+    z-index: 1;
+    background-position: right center;
+}
+
+@media screen and (max-width: 768px) {
+    .container_caixa {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixa_item {
+        width: 50px;
+        height: 370px;
+        background: linear-gradient(180deg, #FCA311 0%, #D78500 52.63%, #462C00 100%);
+        margin-left: -40px;
+        margin-top: 110px;
+    }
+
+    .caixa {
+        background-size: cover;
+        width: 400px;
+        height: 470px;
+        padding: 30px;
+        margin: 20px;
+        z-index: 1;
+        background-position: center;
+    }
+
+}
