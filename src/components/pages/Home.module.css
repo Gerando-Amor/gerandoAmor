@@ -31,6 +31,10 @@
   width: 50%;
 }
 
+.w100{
+  width: 100%;
+}
+
 /* div de texto */
 .boxtext {
   position: relative;
@@ -127,53 +131,52 @@
   .boxtext button {
     margin-left: 100px;
   }
+
+  .containertranformamos{
+    flex-direction: column-reverse;
+  }
+
 }
 
 .container2 {
-  font-family: arial;
-  font-size: 1.2em;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
-  grid-gap: 20px ; /* Espaçamento entre as divs */
-  background-color: #191919;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  background-color: rgb(23, 23, 23);
   background-repeat: no-repeat;
   background-size: contain;
-  color: white;
 }
-.container2 .divh1{
-    margin-left: 50px;
-
+.container2 div h1 {
+  border-bottom: 5px solid rgb(255, 238, 0); 
 }
-
-
-
-@media (max-width: 1080px) {
-  .container2 {
-    grid-template-columns: 1fr; /* Uma coluna em dispositivos menores */
-    
-  }
-}
-
-/* .divQuemSomos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.divQuemSomos h1 {
-    
+.container2 div h1, p {
+    margin-left: 60px;
 }
 
 
+.container2 div img {
+  width: 100%;
+}
+.imagequemsomos img{
+  border-radius: 0 0 0 40%;
+}
+.imagetransformamos img{
+  border-radius: 0 40% 0  0;
+}
 
 
-.divComoTranformamos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+.containertranformamos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
