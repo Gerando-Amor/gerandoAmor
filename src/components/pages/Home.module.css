@@ -1,45 +1,59 @@
 /* tags gerais */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Open+Sans:wght@800&family=Roboto:wght@300;400;500;700;900&display=swap');
 
-.section {
-  display: flex;
-  width: 100%;
-  padding: 2rem 0;
-  position: relative;
-  font-family: "Open Sans", sans-serif;
-  padding-bottom: 120px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2%;
-  display: flex;
-  flex-wrap: wrap;
-  background-image: url("../img/Gerando\ amor\ 1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.seta {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
 .w50 {
-  width: 50%;
+    width: 50%;
 }
 
-.w100{
-  width: 100%;
+.w100 {
+    width: 100%;
+}
+
+main{
+    position: relative;
+}
+
+/* Banner Section */
+.section_banner {
+    display: flex;
+    width: 100%;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    z-index: 1;
+}
+
+.container_banner {
+    width: 100%;
+    max-width: calc(1200px + 4%);;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../img/Gerando\ amor\ 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 4% 0;
+    padding-bottom: 120px;
+}
+
+.seta {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* div de texto */
+.boxtext h1,
+.boxtext h3,
+.boxtext h4{
+    padding: 0 0 0 4%;
+}
 .boxtext {
-  position: relative;
-  z-index: 1;
-  align-self: center;
+    position: relative;
+    z-index: 1;
+    align-self: center;
 }
 
 .boxtext h1 {
@@ -48,135 +62,204 @@
 }
 
 .boxtext h3 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .boxtext h4 {
-  color: #ffbb34;
-  margin: 60px 0;
-  font-size: 1.5rem;
+    color: #ffbb34;
+    margin: 60px 0;
+    font-size: 1.5rem;
 }
 
 .boxtext button {
-  background-color: #ffbb34;
-  border: none;
-  font-weight: 600;
-  color: white;
-  padding: 20px 60px;
-  border-radius: 5px;
-  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.51);
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.51);
+    background-color: #ffbb34;
+    border: none;
+    font-weight: 600;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 5px;
+    margin: 0 4%;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.51);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.51);
 }
 
 /* css Imagen */
 .boximage {
-  position: relative;
-  display: flex;
+    position: relative;
+    display: flex;
 }
 
 .caixa_item {
-  display: flex;
-  position: absolute;
-  left: -25px;
-  bottom: 20px;
-  width: 50px;
-  height: 70%;
-  background: linear-gradient(180deg, #fca311 0%, #d78500 52.63%, #462c00 100%);
+    display: flex;
+    position: absolute;
+    left: -25px;
+    bottom: 20px;
+    width: 50px;
+    height: 70%;
+    background: linear-gradient(180deg, #fca311 0%, #d78500 52.63%, #462c00 100%);
 }
 
 .boximage img {
-  width: 100%;
-  height: max-content;
+    width: 100%;
+}
+
+
+/* section descriptiion */
+
+.section_description {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(23, 23, 23);
+    font-family: "Aoboshi One";
+}
+
+.container_description {
+    width: 100%;
+    /* calc para calcular o pading que deixa a container banner maior que esse container */
+    max-width: calc(1200px + 4%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    -webkit-box-shadow: 0px -3px 29px 4px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px -3px 29px 4px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px -3px 29px 4px rgba(0, 0, 0, 0.36);
+    z-index: 0;
+}
+
+/* image description */
+.container_description div img {
+    width: 100%;
+}
+
+.imagequemsomos img {
+    border-radius: 0 0 0 200px;
+}
+
+.imagetransformamos img {
+    border-radius: 0 200px 0 0;
+}
+
+/* texto description */
+.container_description h1 {
+    font-weight: 500;
+    font-size: 30px;
+    padding: 3px 0;
+    margin: 0px auto 20px 40px;
+    width: max-content;
+    border-bottom: 2px solid rgb(255, 238, 0);
+}
+
+.boxtext_description p {
+    margin: 0 40px 10px 40px;
+}
+
+/* row reverse container responsive */
+.containertranformamos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /* reponsivo */
 @media screen and (max-width: 1080px) {
-  .w50 {
-    width: 100%;
-  }
 
-  .section {
-    align-content: center;
-  }
+    /* tags gerais */
+    .w50 {
+        width: 100%;
+    }
 
-  .boximage {
-    max-width: 600px;
-    padding: 0 50px;
-    margin: 0 auto;
-    margin-top: 80px;
-  }
-  .container {
-    background: none;
-  }
-  .container::before {
-    content: "";
-    position: absolute;
-    top: 5%;
-    left: 0;
-    width: 100%;
-    height: 90%;
-    background: url("../img/Gerando\ amor\ 1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    /* Ajuste a opacidade conforme necessário */
-    z-index: -1;
-  }
+    .w100 {
+        width: 100%;
+    }
 
-  .caixa_item {
-    left: 25px;
-  }
-  .boxtext button {
-    margin-left: 100px;
-  }
+    /* Section banner */
+    .container_banner {
+        background: none;
+    }
 
-  .containertranformamos{
-    flex-direction: column-reverse;
-  }
+    .container_banner::before {
+        content: "";
+        position: absolute;
+        top: 5%;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        background: url("../img/Gerando\ amor\ 1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        /* Ajuste a opacidade conforme necessário */
+        z-index: -1;
+    }
 
+    /* banner imagem */
+    .boximage {
+        max-width: 600px;
+        padding: 0 50px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .caixa_item {
+        left: 25px;
+    }
+
+    /* button banner */
+    .boxtext .button button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* row reverse container responsive */
+    .containertranformamos {
+        flex-direction: column-reverse;
+    }
+
+    /* image description */
+    .container_description div img {
+        border-radius: 8px;
+    }
+
+    .imagetransformamos,
+    .imagequemsomos {
+        width: 70%;
+        margin: 40px auto;
+    }
+
+    /* texte description responsive */
+    .container_description {
+        text-align: center;
+    }
+
+    .container_description h1 {
+        margin: 40px auto;
+    }
+
+    .container_description p {
+        margin: 0 4%;
+    }
 }
 
-.container2 {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  color: white;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: rgb(23, 23, 23);
-  background-repeat: no-repeat;
-  background-size: contain;
+@media screen and (max-width: 400px) {
+
+    .imagetransformamos,
+    .imagequemsomos {
+        width: 90%;
+    }
+
+    .container_description h1 {
+        font-size: 25px;
+    }
+
+    .container_description p {
+        font-size: 14px;
+    }
 }
-.container2 div h1 {
-  border-bottom: 5px solid rgb(255, 238, 0); 
-}
-.container2 div h1, p {
-    margin-left: 60px;
-}
-
-
-.container2 div img {
-  width: 100%;
-}
-.imagequemsomos img{
-  border-radius: 0 0 0 40%;
-}
-.imagetransformamos img{
-  border-radius: 0 40% 0  0;
-}
-
-
-.containertranformamos{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-
