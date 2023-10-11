@@ -7,6 +7,7 @@ import ImageQuemSomos1 from "../img/quemsomos1.jpg";
 import ImageQuemSomos2 from "../img/quemsomos2.png";
 import Seta from "../img/chevron-down.svg";
 import SwiperTeam from "./partials_home/SwiperTeam";
+import '../../index.css'
 function Home() {
   return (
     <main>
@@ -90,7 +91,7 @@ function Home() {
               <div className={styles.backcolor_team}></div>
               <div className={styles.slider_team}><SwiperTeam/></div>   
           </div>
-        </div>
+        </div>       
       </section>
     </main>
   );
