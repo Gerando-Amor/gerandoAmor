@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-main{
+main {
     position: relative;
 }
 
@@ -26,7 +26,8 @@ main{
 
 .container_banner {
     width: 100%;
-    max-width: calc(1200px + 4%);;
+    max-width: calc(1200px + 4%);
+    ;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -47,9 +48,10 @@ main{
 /* div de texto */
 .boxtext h1,
 .boxtext h3,
-.boxtext h4{
+.boxtext h4 {
     padding: 0 0 0 4%;
 }
+
 .boxtext {
     position: relative;
     z-index: 1;
@@ -104,6 +106,7 @@ main{
     width: 100%;
 }
 
+/* fim banner section */
 
 /* section descriptiion */
 
@@ -115,7 +118,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(23, 23, 23);
-    font-family: "Aoboshi One";
+    font-family: "Aoboshi One", sans-serif;
 }
 
 .container_description {
@@ -166,6 +169,110 @@ main{
     align-items: center;
 }
 
+/* section team */
+.section_team {
+    display: flex;
+    width: 100%;
+    position: relative;
+    font-family: "Aoboshi One", sans-serif;
+    background-color: white;
+    z-index: 1;
+}
+
+.container_team {
+    width: 100%;
+    /* calc para calcular o pading que deixa a container banner maior que esse container */
+    max-width: calc(1200px + 4%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.boxtext_team {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.boxtext_team h1 {
+    font-size: 30px;
+    margin: 40px auto;
+    width: max-content;
+    position: relative;
+}
+
+.boxtext_team h1::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    /* Ajuste o valor conforme necessário para controlar a altura da borda */
+    left: -5%;
+    width: 110%;
+    border-radius: 10px;
+    height: 3px;
+    /* Ajuste a espessura da borda conforme necessário */
+    background-color: #ffbb34;
+    /* Cor da borda */
+    z-index: 0;
+}
+
+.boxvideo_team {
+    width: 50%;
+    height: 300px;
+    margin: 50px auto;
+    border-radius: 10px;
+    position: relative;
+}
+.boxvideo_team::before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    /* Ajuste o valor conforme necessário para controlar a altura da borda */
+    left: -5%;
+    width: 110%;
+    border-radius: 10px;
+    height: 3px;
+    /* Ajuste a espessura da borda conforme necessário */
+    background-color: #000000;
+    /* Cor da borda */
+    z-index: 0;
+}
+.boxvideo_team iframe{
+    width: 100%;
+}
+.boxtext_team p{ 
+    margin: 0 auto;
+    font-size: 18px;
+}
+/* slider backcolor */
+.boxslider_team{
+    position: relative;
+    width: 100%;
+    margin: 100px 0;
+}
+.backcolor_team{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 100px;
+    background-color: rgb(23, 23, 23);
+    transform: translateY(-50%);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+
+}
+.slider_team{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
 /* reponsivo */
 @media screen and (max-width: 1080px) {
 
@@ -198,7 +305,7 @@ main{
         /* Ajuste a opacidade conforme necessário */
         z-index: -1;
     }
-
+    
     /* banner imagem */
     .boximage {
         max-width: 600px;
@@ -218,6 +325,7 @@ main{
         transform: translateX(-50%);
     }
 
+    /* section description */
     /* row reverse container responsive */
     .containertranformamos {
         flex-direction: column-reverse;
@@ -234,7 +342,7 @@ main{
         margin: 40px auto;
     }
 
-    /* texte description responsive */
+    /* text description responsive */
     .container_description {
         text-align: center;
     }
@@ -245,6 +353,9 @@ main{
 
     .container_description p {
         margin: 0 4%;
+    }
+    .boxvideo_team {
+        width: 80%;
     }
 }
 
@@ -261,5 +372,8 @@ main{
 
     .container_description p {
         font-size: 14px;
+    }
+    .boxvideo_team {
+       height: 170px;
     }
 }
