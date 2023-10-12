@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Home.module.css";
-import SwiperTeam from "./partials_home/SwiperTeam";
 import SectionBanner from "./partials_home/SectionBanner";
 import SectionDescription from "./partials_home/SectionDescription";
-
+import SectionTeam from "./partials_home/SectionTeam";
 function Home() {
   return (
-    <main>
+    <main className={styles.main}>
       <SectionBanner/>
       <SectionDescription/>
+      <SectionTeam/>
     </main>
   );
 }
