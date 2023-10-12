@@ -1,87 +1,134 @@
 .myswiper {
-    width: 60%;
-    height: 100%;
-  }
-  
-  .swiper_slide {
-    border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-    background: #8b8b8b;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 60%;
+  height: 100%;
+}
+
+.swiper_slide {
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  background: #8b8b8b;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Arrowbox {
+  position: absolute;
+  width: calc(100% - 10%);
+  display: flex;
+  padding: 18px 5%;
+  justify-content: space-between;
+  top: 50%;
+  left: 0;
+  height: 70px;
+  transform: translateY(-50%);
+}
+
+.button_prev_team {
+  transform: scaleX(-1);
+  cursor: pointer;
+}
+
+.button_next_team {
+  cursor: pointer;
+}
+
+.button_prev_team:active {
+  animation: moveLeft 1.5s infinite;
+}
+
+.button_next_team:active {
+  animation: moveRight 1.5s infinite;
+}
+
+.autoplay_progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ffbb3f;;
+}
+
+.autoplay_progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #ffbb3f;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(5px);
   }
 
-  .Arrowbox{
-    position: absolute;
-    width: calc(100% - 10%);
-    display: flex;
-    padding: 18px 5%;
-    justify-content: space-between;
-    top: 50%;
-    left: 0;
-    height: 70px;
-    transform: translateY(-50%);
+  25% {
+    transform: translateX(20px);
   }
-  .button_prev_team{
-    transform: scaleX(-1);
-    cursor: pointer;
+
+  50% {
+    transform: translateX(10px);
+    /* Ajuste a distância da animação conforme necessário */
   }
-  .button_next_team{ 
-    cursor: pointer;
+
+  75% {
+    transform: translateX(20px);
   }
-  .button_prev_team:hover{
-    animation: moveLeft 1.5s infinite;
+
+  100% {
+    transform: translateX(5px);
   }
-  .button_next_team:hover{
-    animation: moveRight 1.5s infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-5px) scaleX(-1);
   }
-  @keyframes moveRight {
-    0% {
-      transform: translateX(5px);
-    }
-    25%{
-      transform: translateX(20px);
-    }
-    50% {
-      transform: translateX(10px); /* Ajuste a distância da animação conforme necessário */
-    }
-    75%{
-      transform: translateX(20px);
-    }
-    100% {
-      transform: translateX(5px);
-    }
+
+  25% {
+    transform: translateX(-20px) scaleX(-1);
   }
-  @keyframes moveLeft {
-    0% {
-      transform: translateX(-5px) scaleX(-1);
-    }
-    25%{
-      transform: translateX(-20px) scaleX(-1);
-    }
-    50% {
-      transform: translateX(-10px) scaleX(-1); /* Ajuste a distância da animação conforme necessário */
-    }
-    75%{
-      transform: translateX(-20px) scaleX(-1);
-    }
-    100% {
-      transform: translateX(-5px) scaleX(-1);
-    }
+
+  50% {
+    transform: translateX(-10px) scaleX(-1);
+    /* Ajuste a distância da animação conforme necessário */
   }
-  @media screen and (max-width: 780px) {
-    .Arrowbox{
-      display: none;
-    }
+
+  75% {
+    transform: translateX(-20px) scaleX(-1);
   }
+
+  100% {
+    transform: translateX(-5px) scaleX(-1);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .Arrowbox {
+    display: none;
+  }
+}
