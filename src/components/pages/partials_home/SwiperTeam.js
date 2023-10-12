@@ -21,7 +21,7 @@ export default function SwiperTeam() {
                 slidesPerView={1}
                 spaceBetween={10}
                 autoplay={{
-                    delay: 5500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 navigation={{
