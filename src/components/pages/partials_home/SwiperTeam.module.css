@@ -40,10 +40,10 @@
   .button_next_team{ 
     cursor: pointer;
   }
-  .button_prev_team:hover{
+  .button_prev_team:active{
     animation: moveLeft 1.5s infinite;
   }
-  .button_next_team:hover{
+  .button_next_team:active{
     animation: moveRight 1.5s infinite;
   }
   @keyframes moveRight {

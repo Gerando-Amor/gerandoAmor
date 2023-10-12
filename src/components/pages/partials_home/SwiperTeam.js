@@ -21,6 +21,7 @@ export default function SwiperTeam() {
                     640: {
                         slidesPerView: 2,
                         spaceBetween: 20,
+                        navigation: true
                     },
 
                     1024: {
