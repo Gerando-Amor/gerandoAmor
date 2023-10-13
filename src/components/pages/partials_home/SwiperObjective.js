@@ -17,6 +17,7 @@ export default function SwiperObjective(params) {
                 prevEl: `.${styles.button_prev_team}`, // Use button_prev_team para "Anterior"
                 nextEl: `.${styles.button_next_team}`, // Use button_next_team para "Próximo"
             }}
+            loop={true}
             breakpoints={{
                 500:{
                     slidesPerView: 2,
