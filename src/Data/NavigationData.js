@@ -7,7 +7,7 @@ const NavigationData = [
             {id: 10, label: "Quem Somos", url: "#quemsomos"},
             {id: 11, label: "Como Transformamos", url: "#comotransformamos"},
             {id: 12, label: "Misão", url: "#misao"},
-            {id: 13, label: "Objetivo", url: "#objetivo"}
+            {id: 13, label: "Objetivo", url: "#Objetivo"}
         ]
     },
     { 

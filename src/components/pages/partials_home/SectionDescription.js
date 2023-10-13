@@ -4,7 +4,7 @@ import ImageQuemSomos1 from "../../img/quemsomos1.jpg";
 import ImageQuemSomos2 from "../../img/quemsomos2.png";
 function SectionDescription() {
     return (
-        <section className={styles.section_description}>
+        <section className={styles.section_description} id="descricao">
             <div className={styles.container_description}>
                 <div className={classNames(styles.w50, styles.boxtext_description)}>
                     <h1>Quem Somos</h1>
