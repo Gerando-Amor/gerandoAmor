@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -34,7 +34,7 @@ export default function SwiperObjective(params) {
                     spaceBetween: 40,
                 },
             }}
-            modules={[Navigation]}
+            modules={[Navigation, Pagination]}
             className={styles.myswiper}
             >
                 <SwiperSlide className={styles.swiper_slide}>Slide 1</SwiperSlide>
