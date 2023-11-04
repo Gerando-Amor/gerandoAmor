@@ -99,11 +99,11 @@
     
     .cards_projects {
         flex-direction: column;
-        margin-bottom: 25px;
         width: 90%;
     }
 
     .description_projects{
+       
         background-color: transparent;
         text-align: center;
     }

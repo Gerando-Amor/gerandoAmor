@@ -1,12 +1,16 @@
 
 import classNames from "classnames";
-import Caratê from "../../img/Caratê.png";
+
 import styles from "../partials_projects/sectionProjects.module.css"
 
+import Caratê from "../../img/Caratê.png";
 
 function SectionProjects(){
+
+
     return(
         <section className={classNames(styles.section_projects, )}>
+
             <div className={classNames(styles.container_projects)}>
             <div className={styles.divh1_projects}>
                 <h1>Nossos Projetos</h1>
@@ -43,5 +47,7 @@ function SectionProjects(){
     )
 
 }
+
+
 
 export default SectionProjects
