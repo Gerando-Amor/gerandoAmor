@@ -1,6 +1,10 @@
-
+import SectionBanner from "./partials_contact/SectionBanner"
 function Contact() {
-    return <h1>Contact</h1>
+    return (
+        <main>
+            <SectionBanner/>
+        </main>
+    )
 
 }
 

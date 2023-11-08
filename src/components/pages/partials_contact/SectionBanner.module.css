@@ -1,0 +1,76 @@
+.SectionBanner{
+    display: flex;
+    width: 100%;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(23, 23, 23);
+    z-index: 1;
+    font-family: "Aoboshi One", sans-serif;
+    color: white;
+}
+
+.BannerContainer{
+    width: 100%;
+    max-width: calc(1200px + 4%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4% 0;
+    background-image: url("../../img/backgroubd\ -\ contatosbannerContact.png");
+    background-size: cover;
+}
+.imglogo{
+    padding: 0 40px;
+}
+
+.textbox{
+    width: 60%;
+    padding: 0 9%;
+}
+
+.TitleContact{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.TitleContact::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    /* Ajuste o valor conforme necessário para controlar a altura da borda */
+    width: 100%;
+    border-radius: 10px;
+    height: 3px;
+    /* Ajuste a espessura da borda conforme necessário */
+    background-color: #ffbb34;
+    /* Cor da borda */
+    z-index: 0;
+}
+.TitleContact h1{
+    font-size: 90px;
+    font-weight: 500;
+    margin: 0;
+}
+.TitleContact span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.textbox h4{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 805px) {
+    .BannerContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .TitleContact h1{
+        font-size: 50px;
+        margin: 14px 0;
+    }
+    .TitleContact span{
+        font-size: 13px;
+    }
+}
