@@ -39,3 +39,8 @@
 .copyright img{
     padding: 0 10px;
 }
+@media screen and (max-width: 410px){
+    .boxnavigation a{
+        display: block;
+    }
+}
