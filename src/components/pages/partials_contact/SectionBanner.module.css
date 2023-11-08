@@ -62,6 +62,12 @@
 }
 
 @media screen and (max-width: 805px) {
+    .textbox{
+        width: 95%;     
+    }
+    .imglogo{
+        padding: 0;
+    }
     .BannerContainer{
         flex-wrap: wrap;
         justify-content: center;
