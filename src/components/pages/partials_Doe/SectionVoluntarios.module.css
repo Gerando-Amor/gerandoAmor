@@ -1,0 +1,15 @@
+section{
+    background-color: #FFFFFF;
+}
+
+.BackgroundImg{
+    background-image: URL("../../img/background_voluntario.png");
+    background-size: cover;
+    width: 100%;
+    height: 361px;
+}
+
+.ConteudoDiv{
+    text-align: center;
+
+}
