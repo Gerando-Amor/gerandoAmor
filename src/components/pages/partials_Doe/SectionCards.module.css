@@ -74,8 +74,8 @@
 .btnsCards a{
     color: #000000;
     text-decoration: none;
-    font-family: Inter;
-    font-size: 16px;
+    font-family: Aoboshi One;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: 22px;
@@ -83,7 +83,7 @@
 
 .cardDif{
     display: flex;
-    width: 550px;
+    width: 540px;
     height: 272px;
 }
 
@@ -98,10 +98,10 @@
 .cardStyle h4{
     text-align: center;
     font-family: Aoboshi One;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
     line-height: normal;
-    margin: 0;
+    margin-top: 5px;
 }
 
 .cardStyle p{
@@ -118,7 +118,7 @@
 .conteudo{
     display: flex;
     align-items:center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 } 
 
 .infosCard{
