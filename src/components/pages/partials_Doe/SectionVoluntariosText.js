@@ -1,13 +1,19 @@
 import style from "./SectionVoluntariosText.module.css"
-
+import retangulo from "../../img/Rectangle2.svg"
 
 function SectionVoluntariosText (){
 
     return(
         <section>
-            <div className={style.ConteudoDiv}>
+            <div className={style.List}>
+                
+                
                 <ul>
-                <h1> O que é ser um voluntário? </h1>
+                    <div>
+                        <h1> O que é ser um voluntário? </h1>
+                        <img className={style.Subimg} src={retangulo} />
+                    </div>
+                    
                     <li>
                         Voluntários são indivíduos que contribuem com seu tempo e esforço de forma não remunerada para apoiar as atividades e causas da ONG.
                     </li>
@@ -21,12 +27,13 @@ function SectionVoluntariosText (){
                         Os voluntários geralmente não são obrigados a fazer contribuições financeiras, embora possam optar por doar se desejarem.
                     </li>
                 </ul>
-            
 
-                <div className={style.btnsCards}>
-                    <a> Saiba Mais </a>
-                </div>
+            </div>
 
+            <div className={style.btnsDiv}>
+                <a href="" className={style.stylea}>
+                    Saiba Mais
+                </a>
             </div>
 
         </section>
