@@ -5,7 +5,7 @@ section{
 .BackgroundImg{
     background-image: URL("../../img/background_voluntario.png");
     background-size: cover;
-    width: 100%;
+    width: 101%;
     height: 361px;
 }
 
