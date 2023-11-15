@@ -1,7 +1,7 @@
-import style from "./SectionVoluntariosText.module.css"
+import style from "./SectionAssociadoText.module.css"
 import retangulo from "../../img/Rectangle2.svg"
 
-function SectionVoluntariosText (){
+function SectionAssociadoText (){
 
     return(
         <section>
@@ -40,4 +40,4 @@ function SectionVoluntariosText (){
     )
 }
 
-export default SectionVoluntariosText
+export default SectionAssociadoText

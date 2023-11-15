@@ -1,0 +1,59 @@
+body {
+    font-family: "Aoboshi One";
+}
+
+.List h1{
+    font-size: 25px;
+    margin-bottom: -10px;
+}
+
+.Subimg{
+    margin-top: -10px;
+    width: 320px;
+}
+
+.List ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.List li{
+    margin: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.List{
+    display: flex;
+    justify-content: center;
+    height: 308px;
+    margin-top: 60px;
+}
+
+
+.btnsDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+
+}
+
+.btnsDiv a{
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #FCA311;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.stylea a{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+
+}

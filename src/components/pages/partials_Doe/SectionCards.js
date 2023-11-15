@@ -27,7 +27,7 @@ function SectionCards (){
 
                     <div className={style.btnsCards}>
 
-                        <a className={style.knowMore} href="" target="_blank">
+                        <a className={style.knowMore} href="Voluntario" target="_blank">
                             Voluntariado
                         </a>
 
@@ -45,7 +45,7 @@ function SectionCards (){
                     </p>
                     <div className={style.btnsCards}>
 
-                        <a className={style.knowMore} href="" target="_blank">
+                        <a className={style.knowMore} href="Associado" target="_blank">
                             Saiba Mais
                         </a>
 
