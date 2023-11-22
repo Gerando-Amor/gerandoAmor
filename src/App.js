@@ -3,8 +3,9 @@ import Home from "./components/pages/Home";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Projects from "./components/pages/Projects";
-
-
+import Doe from "./components/pages/Doe";
+import Voluntarios from "./components/pages/Voluntarios";
+import Associado from "./components/pages/Associado";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="Projetos" element={<Projects/>}/>
+          <Route path="Doe" element={<Doe />} />
+          <Route path="Voluntario" element={<Voluntarios />} />
+          <Route path="Associado" element={<Associado />} />
         </Routes>
         <Footer/>
       </Router>
