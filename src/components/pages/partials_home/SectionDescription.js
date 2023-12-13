@@ -1,7 +1,7 @@
 import styles from "./SectionDescription.module.css"
 import classNames from "classnames"
-import ImageQuemSomos1 from "../../img/quemsomos1.jpg";
-import ImageQuemSomos2 from "../../img/quemsomos2.png";
+import QuemSomos from "../../img/QuemSomos.png";
+import InicioDoProjeto from "../../img/InicioDoProjeto.png";
 function SectionDescription() {
     return (
         <section className={styles.section_description} id="descricao">
@@ -9,29 +9,36 @@ function SectionDescription() {
                 <div className={classNames(styles.w50, styles.boxtext_description)}>
                     <h1>Quem Somos</h1>
                     <p>
-                        A ONG "Gerando Amor" é uma organização dedicada a fazer a diferença na vida de crianças carentes por meio de assistência social e espiritual.
-                        Nosso principal objetivo é fornecer um ambiente acolhedor e apoiador para as crianças,
-                        onde não apenas suas necessidades básicas são atendidas,
-                        mas também onde elas têm a oportunidade de aprender e crescer em diferentes aspectos de suas vidas.
+                    Nosso Projeto surgiu em março de 2020, no auge da Pandemia,
+                    quando João Vitor A. de Araújo decidiu orar por todos os mais
+                    necessitados. Entretanto, com o coração inclinado no propósito
+                    certo, houve um questionamento em seu coração - " <span>Como estão
+                    os mais necessitados na Pandemia?</span>" nessa oração, João Vitor
+                    ouviu a voz do Espírito Santo pela primeira vez em sua vida, que
+                    disse “<span>Gere</span>”. Nosso Deus não é apenas um comunicador com a
+                    nossa humanidade, mas sim o Deus Criador. Toda sua fala é para
+                    criação ou sustento de algo, em nossas vidas.
                     </p>
                 </div>
                 <div className={classNames(styles.w50, styles.imagequemsomos)}>
-                    <img src={ImageQuemSomos1} alt="" srcset="" />
+                    <img src={QuemSomos} alt="" srcset="" />
                 </div>
 
 
                 <div className={classNames(styles.w100, styles.containertranformamos)} >
                     <div className={classNames(styles.w50, styles.quemsomos2, styles.imagetransformamos)}>
-                        <img src={ImageQuemSomos2} alt="" srcset="" />
+                        <img src={InicioDoProjeto} alt="" srcset="" />
                     </div>
                     <div className={classNames(styles.w50, styles.boxtext_description)}>
-                        <h1>Como transformamos</h1>
+                        <h1>Início do Projeto</h1>
                         <p>
-                            Por meio do estabelecimento de vínculos de confiança que contemplam conhecer a história de vida de cada criança,
-                            adolescente e respectivas famílias que integram a comunidade e entorno,
-                            asseguramos diálogo, relações de afetividade,
-                            ampliação do universo de troca de bens culturais,
-                            acesso à tecnologia e a experimentação.
+                        João iniciou uma campanha nas redes sociais,
+                        convidando seu primo Ytalo Freire para recolher
+                        doações de alimentos e entregar as doações para as
+                        famílias em situação de vulnerabilidade social. No
+                        primeiro mês conseguiram juntos <span>45 cestas básicas</span>, e
+                        muitas almas se convertendo ao Evangelho nas ruas
+                        de São Vicente, SP. Visitando lares e moradores de rua.
                         </p>
                     </div>
                 </div>

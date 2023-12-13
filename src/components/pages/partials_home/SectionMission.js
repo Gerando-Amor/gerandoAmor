@@ -6,9 +6,11 @@ function SectionMission() {
             <div className={styles.container_mission}>
                 <h1>Missão</h1>
                 <p>
-                    Nossa missão é tripla: aliviar as necessidades imediatas das famílias em situação de carência, 
-                    nutrir suas almas com mensagens de fé e esperança, 
-                    e capacitar suas mentes por meio de cursos e atividades educacionais e culturais.
+                “O nosso objetivo é atingir indivíduos e famílias,
+                através de doações, cursos e atividades
+                esportivas. Acreditamos que o Evangelho é
+                muito importante para a nossa sociedade."
+
                 </p>
             </div>
         </section>

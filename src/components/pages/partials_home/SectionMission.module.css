@@ -21,7 +21,7 @@
     box-shadow: 0px -3px 29px 4px rgba(0, 0, 0, 0.36);
     z-index: 0;
     text-align: center;
-    background-image: url("../../img/BackgroundMission.png");
+    background-image: url("../../img/NossaMissao.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,7 +33,9 @@
     font-weight: 500;
     margin: 30px auto;
     position: relative;
+    
 }
+
 .container_mission h1::after {
     content: "";
     position: absolute;

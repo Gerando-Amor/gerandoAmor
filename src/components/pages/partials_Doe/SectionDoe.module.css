@@ -1,0 +1,97 @@
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Aoboshi One;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Aoboshi One;
+    
+}
+
+p{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Aoboshi One;
+  
+}
+
+.backgroundDiv {
+    margin: 0;
+    border: 1px;
+    background-image: URL("../../img/background_image.png");
+    width: 100%;
+    background-size: cover;
+    background-color: black;
+    height: 640px;
+}
+
+.infos{
+    text-align: center; /* Centraliza horizontalmente o texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.conteudoImagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.conteudoImagem img{
+    padding: 15px;
+}    
+
+
+@media(max-width:1200px){
+   
+    .backgroundDiv {
+        background-image: URL("../../img/background_image.png");
+        width: 100%;
+        background-size: cover;
+        
+
+    
+    }
+
+    .infos{
+        text-align: center; /* Centraliza horizontalmente o texto */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .h1{
+        font-size: 70px;
+        
+    }
+    
+    .h2{
+        font-size: 30px;
+        
+    }
+    
+    .p{
+        font-size: 30px;
+        
+    }
+    
+    .conteudoImagem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .conteudoImagem img{
+        padding: 15px;
+    }    
+    
+}

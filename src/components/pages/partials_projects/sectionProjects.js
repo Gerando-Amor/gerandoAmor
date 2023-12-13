@@ -24,6 +24,9 @@ function SectionProjects(){
                 <img  src={Caratê} alt="" />
                 </div>
             </div>
+
+
+
             <div className={styles.cards_projects}>
                 <div className={classNames(styles.w100, styles.description_projects)}>
                     <h1>Caratê</h1>
@@ -33,6 +36,9 @@ function SectionProjects(){
                 <img  src={Caratê} alt="" />
                 </div>
             </div>
+
+
+            
             <div className={styles.cards_projects}>
                 <div className={classNames(styles.w100, styles.description_projects)}>
                     <h1>Caratê</h1>
