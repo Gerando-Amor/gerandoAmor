@@ -11,7 +11,7 @@ function SectionAssociadoText (){
                 <ul>
                     <div>
                         <h1> O que é ser um voluntário? </h1>
-                        <img className={style.Subimg} src={retangulo} />
+                        <img className={style.Subimg} src={retangulo} alt=""/>
                     </div>
                     
                     <li>
@@ -31,7 +31,7 @@ function SectionAssociadoText (){
             </div>
 
             <div className={style.btnsDiv}>
-                <a href="" className={style.stylea}>
+                <a href="/#" className={style.stylea}>
                     Saiba Mais
                 </a>
             </div>

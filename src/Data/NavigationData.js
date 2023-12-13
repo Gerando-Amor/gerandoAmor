@@ -24,7 +24,7 @@ const NavigationData = [
     { 
         id: 4, 
         label: 'Como Ajudar?', 
-        url: '/comoajudar',
+        url: '/doe',
         submenu: [
             {id: 40, label: "Doe agora", url: "#doe"},
             {id: 41, label: "Ser Voluntário", url: "#voluntario"},
