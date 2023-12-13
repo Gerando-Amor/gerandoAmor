@@ -16,7 +16,7 @@ export default function FAQItem({ question, answer }) {
                     {question}
                     <img src={isOpen ? bmenos : bmais} alt="" />
                 </summary>
-                <p>{answer}</p>
+                <p style={{fontSize: "16px"}}>{answer}</p>
             </details>
         </div>
     );
