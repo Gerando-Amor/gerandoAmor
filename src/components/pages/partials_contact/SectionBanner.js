@@ -15,8 +15,8 @@ export default function SectionBanner() {
                 </div>
                 <h4>Endereço:</h4>
                 <span>
-                    Rua,Num<br/>
-                    Bairro, CEP 00000-000<br/>
+                    Praça Maria de Lourdes Batista<br/>
+                    Jockei Clube, CEP 11360-160<br/>
                     São Vicente/SP - Brasil
                 </span>
             </div>
