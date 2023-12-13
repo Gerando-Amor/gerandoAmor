@@ -1,0 +1,64 @@
+.SectionBanner {
+    display: flex;
+    width: 100%;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    font-family: "Aoboshi One", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.BannerContainer {
+    width: 100%;
+    max-width: calc(1200px + 4%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 0;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    /* Ajuste o valor conforme necessário para controlar a altura da borda */
+    width: 100%;
+    border-radius: 10px;
+    height: 3px;
+    /* Ajuste a espessura da borda conforme necessário */
+    background-color: #ffbb34;
+    /* Cor da borda */
+    z-index: 0;
+}
+
+.title {
+    padding: 15px 0;
+    position: relative;
+    font-weight: 500;
+    margin: 0 5%;
+}
+
+.boxesfaq {
+    width: 90%;
+    margin: 0 auto;
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px 2%;
+    margin: 10px 0;
+    border: 1px solid black;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
