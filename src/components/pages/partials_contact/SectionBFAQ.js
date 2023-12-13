@@ -4,7 +4,7 @@ export default function SectionBFQ() {
   return (
     <section className={styles.SectionBanner}>
         <div className={styles.BannerContainer}>
-            <h1>FAQ</h1>
+            <h1 className={styles.title}>FAQ</h1>
         </div>
     </section>
   )
