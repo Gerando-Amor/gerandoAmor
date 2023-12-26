@@ -2,7 +2,7 @@ import styles from "./SectionTeam.module.css"
 import SwiperTeam from "./SwiperTeam"
 function SectionTeam() {
     return (
-        <section className={styles.section_team}>
+        <section className={styles.section_team} id="equipe">
             <div className={styles.container_team}>
                 <div className={styles.boxtext_team}>
                     <h1>Nossa Equipe</h1>

@@ -2,7 +2,7 @@ import styles from "./SectionMission.module.css";
 
 function SectionMission() {
     return (
-        <section className={styles.section_mission}>
+        <section className={styles.section_mission} id="missao">
             <div className={styles.container_mission}>
                 <h1>Missão</h1>
                 <p>

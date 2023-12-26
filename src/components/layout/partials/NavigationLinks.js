@@ -24,15 +24,15 @@ function NavigationLink() {
                 {
                     submenu.map((submenu) => (
                         <li className={styles.subitem}>
-                            <Link
-                                to={submenu.url}
+                            <a
+                                href={submenu.url}
                                 className={classNames(styles.link, {
                                     [styles.activeSubLink]: location.hash === submenu.url,
                                 })}
                                 onClick={fecharSubmenu}
                             >
                                 {submenu.label}
-                            </Link>
+                            </a>
                         </li>
                     ))
                 }
