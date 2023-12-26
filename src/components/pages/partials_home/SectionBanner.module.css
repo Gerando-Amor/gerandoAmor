@@ -92,10 +92,9 @@
 
 .boximage img {
     width: 100%;
-    border-top-left-radius: 200px; /* Canto superior esquerdo */
-    border-bottom-right-radius: 200px; /* Canto inferior direito */
+    border-top-left-radius: 30%; /* Canto superior esquerdo */
+    border-bottom-right-radius: 30%; /* Canto inferior direito */
     box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1);
-    
 }
 
 /* fim banner section */
@@ -146,6 +145,4 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
-
 }
