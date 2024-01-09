@@ -19,7 +19,7 @@ export default function BoxProject({Data}) {
 
         // Chama a função para carregar a imagem ao montar o componente
         carregarImagem();
-    }, [Data.id]);
+    }, [Data.img]);
     return (
         <div className={styles.cards_projects}>
             <div className={classNames(styles.w100, styles.description_projects)}>
