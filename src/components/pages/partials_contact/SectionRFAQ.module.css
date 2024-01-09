@@ -56,7 +56,6 @@ details {
 }
 
 summary {
-    list-style: none;
     cursor: pointer;
     display: flex;
     justify-content: space-between;

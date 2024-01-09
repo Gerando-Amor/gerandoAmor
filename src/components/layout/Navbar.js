@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import Container from "./Container";
 import styles from "./Navbar.module.css";
 import { useState, useEffect } from 'react';
 import Logo from "./partials/Logo";
 import NavigationLink from "./partials/NavigationLinks";
+import MobileNavigation from "./partials/MobileNavigation";
 
 function Navbar() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1023);
+  const [open , setOpen] = useState(false)
+  const checkboxRef = useRef(null);
 
   useEffect(() => {
     // ouvinte de redimencionamento que ativa a função handleResize
@@ -26,7 +29,21 @@ function Navbar() {
 
 
 
-  function abrirmenu() { };
+  function abrirmenu() { 
+    let body = document.body.style
+    
+    if(!open){
+     setOpen(true)
+     body.overflow = 'hidden' 
+     checkboxRef.current.checked = true
+    } 
+    else{ 
+      setOpen(false);
+      body.overflow = 'auto'
+      checkboxRef.current.checked = false
+    }
+   
+  };
 
 
   return (
@@ -41,14 +58,17 @@ function Navbar() {
             )
             :
             (
-              <div className={styles.mobilehamburguer}>
-                <label className={styles.mobileIcon} htmlFor="check">
-                  <input type="checkbox" onChange={abrirmenu} id="check" />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </label>
-              </div>
+              <>
+                <div className={styles.mobilehamburguer}>
+                  <label className={styles.mobileIcon} htmlFor="check">
+                    <input ref={checkboxRef} type="checkbox" onChange={abrirmenu} id="check" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                {open && <MobileNavigation abrirmenu={abrirmenu}/>}
+              </>
             )
         }
       </Container>
