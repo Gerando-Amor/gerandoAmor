@@ -31,7 +31,7 @@ function SectionAssociadoText (){
             </div>
 
             <div className={style.btnsDiv}>
-                <a href="/#" className={style.stylea}>
+                <a href="https://wa.me/5513991532364?text=Ol%C3%A1,%20tudo%20bem?%0AQuero%20ser%20um%20volunt%C3%A1rio!"target="_blank" rel="noopener noreferrer" className={style.stylea}>
                     Saiba Mais
                 </a>
             </div>

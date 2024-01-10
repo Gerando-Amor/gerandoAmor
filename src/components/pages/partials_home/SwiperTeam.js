@@ -6,6 +6,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from "./SwiperTeam.module.css"
+import Joao from "../../img/JoaoAraujo.jpg";
+import Kauan from "../../img/KaunMonteiro.jpg";
+import Marcely from "../../img/MarcelyNeves.jpg";
+import Emanoel from "../../img/EmanoelSilva.jpg";
+import Giovanna from "../../img/GiovannaLima.jpg";
+import Julia from "../../img/JuliaChagas.jpg";
+import Bianca from "../../img/BiancaPain.jpg";
+
 // import required modules
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 export default function SwiperTeam() {
@@ -43,15 +51,14 @@ export default function SwiperTeam() {
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className={styles.myswiper}
             >
-                <SwiperSlide className={styles.swiper_slide}>Slide 1</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 2</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 3</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 4</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 5</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 6</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 7</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 8</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 9</SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide}><img src={Joao} alt="" /></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide}><img src={Kauan} alt="" /></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide}><img src={Julia} alt="" /></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide}><img src={Giovanna} alt="" /></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide}><img src={Marcely} alt="" /></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide}><img src={Bianca} alt="" /></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide}><img src={Emanoel} alt="" /></SwiperSlide>
+                
                 <div className={styles.autoplay_progress} slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>
                         <circle cx="24" cy="24" r="20"></circle>
