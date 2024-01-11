@@ -65,7 +65,7 @@ function SectionCards (){
                         <p className={style.conteudo}>
                             Clique no Icone
                             <img className={style.layout} src={Seta} alt="seta"/>
-                            <img className={style.layout} src={Instagram} alt="Instagram"/>
+                           <a href="https://www.instagram.com/gerandoamor.013/" target="_blank" rel="noopener noreferrer"><img className={style.layout} src={Instagram} alt="Instagram"/></a> 
                         </p>
 
                     </div>                    

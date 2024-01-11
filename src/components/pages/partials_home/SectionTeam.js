@@ -1,5 +1,7 @@
 import styles from "./SectionTeam.module.css"
 import SwiperTeam from "./SwiperTeam"
+
+
 function SectionTeam() {
     return (
         <section className={styles.section_team} id="equipe">
