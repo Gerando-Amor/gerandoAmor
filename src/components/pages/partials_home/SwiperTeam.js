@@ -37,8 +37,12 @@ export default function SwiperTeam() {
                     nextEl: `.${styles.button_next_team}`, // Use button_next_team para "Próximo"
                 }}
                 breakpoints={{
-                    640: {
+                    400: {
                         slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    640: {
+                        slidesPerView: 3,
                         spaceBetween: 20,
                     },
 
@@ -51,13 +55,13 @@ export default function SwiperTeam() {
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className={styles.myswiper}
             >
-                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Joao}')`}}></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Kauan}')`}}></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Julia}')`}}></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Giovanna}')`}}></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Marcely}')`}}></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Bianca}')`}}></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Emanoel}')`}}></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Joao}')`}}><p>Joao Araujo</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Kauan}')`}}><p>Kauan Monteiro</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Julia}')`}}><p>Julia Chagas</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Giovanna}')`}}><p>Giovanna Lima</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Marcely}')`}}><p>Marcely Neves</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Bianca}')`}}><p>Bianca Pain</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Emanoel}')`}}><p>Emanoel Silva</p></SwiperSlide>
                 
                 <div className={styles.autoplay_progress} slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>
