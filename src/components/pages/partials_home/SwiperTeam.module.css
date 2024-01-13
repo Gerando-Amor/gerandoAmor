@@ -7,8 +7,9 @@
   border-radius: 10px;
   text-align: center;
   font-size: 18px;
-  background: #8b8b8b;
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -62,7 +63,8 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #ffbb3f;;
+  color: #ffbb3f;
+  ;
 }
 
 .autoplay_progress svg {

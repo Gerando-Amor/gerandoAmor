@@ -51,13 +51,13 @@ export default function SwiperTeam() {
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className={styles.myswiper}
             >
-                <SwiperSlide className={styles.swiper_slide}><img src={Joao} alt="" /></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}><img src={Kauan} alt="" /></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}><img src={Julia} alt="" /></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}><img src={Giovanna} alt="" /></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}><img src={Marcely} alt="" /></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}><img src={Bianca} alt="" /></SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}><img src={Emanoel} alt="" /></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Joao}')`}}></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Kauan}')`}}></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Julia}')`}}></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Giovanna}')`}}></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Marcely}')`}}></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Bianca}')`}}></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Emanoel}')`}}></SwiperSlide>
                 
                 <div className={styles.autoplay_progress} slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>
