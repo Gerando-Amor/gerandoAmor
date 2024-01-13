@@ -6,6 +6,7 @@ import Projects from "./components/pages/Projects";
 import Doe from "./components/pages/Doe";
 import Voluntarios from "./components/pages/Voluntarios";
 import Associado from "./components/pages/Associado";
+import Security from "./components/pages/Security";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="Doe" element={<Doe />} />
           <Route path="Voluntario" element={<Voluntarios />} />
           <Route path="Associado" element={<Associado />} />
+          <Route path="Security" element={<Security/>} />
         </Routes>
         <Footer/>
       </Router>
