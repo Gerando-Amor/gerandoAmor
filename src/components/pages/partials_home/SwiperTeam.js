@@ -6,13 +6,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from "./SwiperTeam.module.css"
-import Joao from "../../img/JoaoAraujo.jpg";
-import Kauan from "../../img/KaunMonteiro.jpg";
+import Joao from "../../img/JoaoAraujo.jpeg";
+import Kauan from "../../img/KaunMonteiro.jpeg";
 import Marcely from "../../img/MarcelyNeves.jpg";
-import Emanoel from "../../img/EmanoelSilva.jpg";
-import Giovanna from "../../img/GiovannaLima.jpg";
-import Julia from "../../img/JuliaChagas.jpg";
-import Bianca from "../../img/BiancaPain.jpg";
+import Emanoel from "../../img/EmanoelSilva.jpeg";
+import Giovanna from "../../img/GiovannaLima.jpeg";
+import Julia from "../../img/JuliaChagas.jpeg";
+import Bianca from "../../img/BiancaPain.jpeg";
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
