@@ -1,40 +1,62 @@
 import style from "./SectionSecurityText.module.css"
-import retangulo from "../../img/Rectangle2.svg"
+import retangulo from "../../img/Rectangle3.svg"
+import marcaDaqua from "../../img/GerandoAmor_marcaDaqua.png"
 
 function SectionSecurityText (){
 
     return(
         <section>
-            <div className={style.List}>
-                
-                
-                <ul>
-                    <div>
-                        <h1> O que é ser um voluntário? </h1>
-                        <img className={style.Subimg} src={retangulo} />
-                    </div>
+            <section className={style.Sectionbody}>  
+                 <div className={style.Title}>
+                    <p>
+                        Última atualização: 20/12/2023
+                    </p>
+
+                    <h1> Política de Privacidade</h1>
                     
-                    <li>
-                        Voluntários são indivíduos que contribuem com seu tempo e esforço de forma não remunerada para apoiar as atividades e causas da ONG.
-                    </li>
-                    <li>
-                        Eles geralmente têm um compromisso de curto ou médio prazo, e sua participação pode ser mais flexível.
-                    </li>
-                    <li>
-                        Os voluntários podem desempenhar uma variedade de funções, desde tarefas administrativas simples até trabalho de campo, divulgação, arrecadação de fundos e muito mais.
-                    </li>
-                    <li>
-                        Os voluntários geralmente não são obrigados a fazer contribuições financeiras, embora possam optar por doar se desejarem.
-                    </li>
-                </ul>
+                    <img className={style.Subimg} src={retangulo} />
+                </div>
+            </section>
 
-            </div>
+            <section className={style.Paragraphs}>
+                <div>
+                    <h2>Introdução</h2>
+                    <p>
+                        A ONG Gerando Amor se compromete com a privacidade e a proteção de seus visitantes e usuários. Esta política de privacidade tem como objetivo esclarecer como tratamos as informações coletadas, mesmo que não estejamos coletando dados pessoais neste momento.
+                    </p>
 
-            <div className={style.btnsDiv}>
-                <a href="" className={style.stylea}>
-                    Saiba Mais
-                </a>
-            </div>
+                    <h2>Coleta de Informações</h2>
+                    <p>
+                        Nós não coletamos informações pessoais identificáveis dos visitantes deste site, a menos que voluntariamente fornecidas por meio de formulários de contato ou inscrições em eventos, quando aplicável. Quaisquer informações fornecidas serão usadas apenas para os fins específicos para os quais foram coletadas e não serão compartilhadas com terceiros, a menos que expressamente autorizado por você. 
+                    </p>
+
+                    <h2>Cookies e Dados de Navegação</h2>
+                    <p>
+                        Este site pode usar cookies temporários de sessão que são apagados automaticamente quando você fecha o navegador. Esses cookies são usados apenas para melhorar a experiência de navegação. Não usamos cookies para rastrear informações pessoais.
+                    </p>
+
+                    <h2>Registros do Servidor</h2>
+                    <p>
+                        Nossos servidores podem registrar informações padrão automaticamente, como seu endereço IP, tipo de navegador, páginas visitadas e horários de acesso. Essas informações são usadas apenas para fins de análise de tráfego e não estão vinculadas a identidades pessoais.
+                    </p>
+
+                    <h2>Links para Sites Externos</h2>
+                    <p>
+                        Nosso site pode conter links para sites de terceiros. A ONG Gerando Amor não se responsabiliza pela política de privacidade desses sites. Recomendamos que você leia as políticas de privacidade de qualquer site que você visite.
+                    </p>
+
+                    <h2>Alterações na Política de Privacidade</h2>
+                    <p>
+                        Esta política de privacidade pode ser atualizada periodicamente. Qualquer alteração será refletida nesta página, e a data da última atualização será indicada acima. Certifique-se de verificar periodicamente a política de privacidade para estar ciente de quaisquer mudanças.
+                    </p>
+
+                    <h2>Contato</h2>
+                    <p>
+                        Se você tiver alguma dúvida sobre esta política de privacidade ou sobre como tratamos seus dados, entre em contato conosco em [Inserir endereço de e-mail de contato].Agradecemos por visitar o site da ONG Gerando Amor e pelo seu interesse em nossa causa.
+                    </p>
+                    
+                </div>
+            </section>
 
         </section>
     )

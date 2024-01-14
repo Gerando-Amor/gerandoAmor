@@ -72,7 +72,7 @@
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
     .section_projects{
         background-color: rgb(23, 23, 23);
     }
