@@ -1,6 +1,5 @@
 import style from "./SectionSecurityText.module.css"
 import retangulo from "../../img/Rectangle3.svg"
-import marcaDaqua from "../../img/GerandoAmor_marcaDaqua.png"
 
 function SectionSecurityText (){
 
@@ -14,7 +13,7 @@ function SectionSecurityText (){
 
                     <h1> Política de Privacidade</h1>
                     
-                    <img className={style.Subimg} src={retangulo} />
+                    <img className={style.Subimg} src={retangulo} alt="" />
                 </div>
             </section>
 

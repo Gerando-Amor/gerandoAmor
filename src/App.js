@@ -22,7 +22,7 @@ function App() {
           <Route path="Doe" element={<Doe />} />
           <Route path="Voluntario" element={<Voluntarios />} />
           <Route path="Associado" element={<Associado />} />
-          <Route path="Security" element={<Security/>} />
+          <Route path="Politica-Privacidade" element={<Security/>} />
         </Routes>
         <Footer/>
       </Router>
