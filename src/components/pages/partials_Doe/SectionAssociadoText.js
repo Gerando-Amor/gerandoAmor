@@ -14,7 +14,7 @@ function SectionVoluntariosText (){
                 <ul>
                     <div>
                         <h1> O que é ser um Associado? </h1>
-                        <img className={style.Subimg} src={retangulo} />
+                        <img className={style.Subimg} src={retangulo} alt=""/>
                     </div>
                     
                     <li>
@@ -37,7 +37,7 @@ function SectionVoluntariosText (){
             </div>
 
             <div className={style.btnsDiv}>
-                <a href="" className={style.stylea}>
+                <a href="https://wa.me/5513991532364?text=Ol%C3%A1,%20tudo%20bem?%0AQuero%20ser%20um%20associado!" target="_blank" rel="noopener noreferrer" className={style.stylea} >
                     Quero me Associar!
                 </a>
             </div>

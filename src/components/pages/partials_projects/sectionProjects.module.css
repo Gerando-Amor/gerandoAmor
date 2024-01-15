@@ -7,15 +7,13 @@
 /* .section_projects{
    
 } */
-
 .container_projects {
     display: grid;
     grid-template-columns: 1fr; /* Define duas colunas com largura igual */
     grid-gap: 0; /* Define a lacuna entre as células para 0 para eliminar qualquer espaçamento */
     max-width: calc(800px + 4%);
     margin: 0 auto;
-
-    
+    padding: 0 2%; 
 }
 
 .divh1_projects {
@@ -38,41 +36,7 @@
 }
 
 
-.cards_projects {
- 
-    margin: 0 auto;
-   display: flex;
-  
-    
-}
-
-.description_projects{
-    background-color: lightsalmon;
-    
-    
-}
-
-.description_projects h1{
-   
-    color: white;
-    font-size: 30px;
-    margin-left: 20px;
-}
-
-.description_projects p{
-   
-    color: black;
-    margin-left: 20px;
-}
-
-.img_projects img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 700px) {
     .section_projects{
         background-color: rgb(23, 23, 23);
     }
@@ -96,43 +60,6 @@
         color: white;
         margin: 0; /* Remove as margens padrão do h1 */
     }
-    
-    .cards_projects {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .description_projects{
-       
-        background-color: transparent;
-        text-align: center;
-    }
-
-    .description_projects h1{
-   
-        color: white;
-        font-size: 30px;
-        margin-left: 20px;
-    }
-    
-    .description_projects p{
-       
-        color: white;
-        margin-left: 20px;
-    }
-
-    .img_projects {
-        text-align: center;
-    }
-  
-   
-    .img_projects img{
-        width: 80%;
-        object-fit: cover; 
-        border-radius: 10%;
-    }
-    
-
    
 }
 

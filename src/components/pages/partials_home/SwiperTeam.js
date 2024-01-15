@@ -6,6 +6,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from "./SwiperTeam.module.css"
+import Joao from "../../img/JoaoAraujo.jpeg";
+import Kauan from "../../img/KaunMonteiro.jpeg";
+import Marcely from "../../img/MarcelyNeves.jpg";
+import Emanoel from "../../img/EmanoelSilva.jpeg";
+import Giovanna from "../../img/GiovannaLima.jpeg";
+import Julia from "../../img/JuliaChagas.jpeg";
+import Bianca from "../../img/BiancaPain.jpeg";
+
 // import required modules
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 export default function SwiperTeam() {
@@ -29,8 +37,12 @@ export default function SwiperTeam() {
                     nextEl: `.${styles.button_next_team}`, // Use button_next_team para "Próximo"
                 }}
                 breakpoints={{
-                    640: {
+                    400: {
                         slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    640: {
+                        slidesPerView: 3,
                         spaceBetween: 20,
                     },
 
@@ -43,15 +55,14 @@ export default function SwiperTeam() {
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className={styles.myswiper}
             >
-                <SwiperSlide className={styles.swiper_slide}>Slide 1</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 2</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 3</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 4</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 5</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 6</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 7</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 8</SwiperSlide>
-                <SwiperSlide className={styles.swiper_slide}>Slide 9</SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Joao}')`}}><p>Joao Araujo</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Kauan}')`}}><p>Kauan Monteiro</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Julia}')`}}><p>Julia Chagas</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Giovanna}')`}}><p>Giovanna Lima</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Marcely}')`}}><p>Marcely Neves</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Bianca}')`}}><p>Bianca Pain</p></SwiperSlide>
+                <SwiperSlide className={styles.swiper_slide} style={{ backgroundImage: `url('${Emanoel}')`}}><p>Emanoel Silva</p></SwiperSlide>
+                
                 <div className={styles.autoplay_progress} slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>
                         <circle cx="24" cy="24" r="20"></circle>
