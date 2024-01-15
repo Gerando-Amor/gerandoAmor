@@ -13,7 +13,7 @@ export default function Footer() {
                     <img src={Logo} alt="" />
                     <div>
                         <Link to='/Contato'>Fale Conosco</Link>
-                        <Link to='/Politica'>Política de privacidade</Link>
+                        <Link to='/Politica-Privacidade'>Política de privacidade</Link>
                     </div>
                 </div>
                 <div className={styles.copyright}>
