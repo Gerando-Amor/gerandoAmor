@@ -1,0 +1,82 @@
+body {
+    font-family: "Aoboshi One";
+}
+
+.Sectionbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title {
+    text-align: center;
+}
+
+.Title p {
+    color: #000;
+    font-family: Aoboshi One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Title h1 {
+    color: #D78500;
+    margin-bottom: -10px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.Subimg {
+    max-width: 100%;
+    height: auto;
+}
+
+.Paragraphs {
+    background-image: url("../../img/GerandoAmor_marcaDaqua.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: contain;
+    max-width: 1165px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Paragraphs h2 {
+    color: #D78500;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Paragraphs p {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width: 1080px) {
+    .Title h1 {
+        font-size: 40px;
+    }
+}
+
+/* Adicionar regras de mídia para 780px */
+@media screen and (max-width: 780px) {
+    .Title h1 {
+        font-size: 32px;
+    }
+
+    .Paragraphs h2 {
+        font-size: 20px;
+    }
+
+    .Paragraphs p {
+        font-size: 16px;
+    }
+}
