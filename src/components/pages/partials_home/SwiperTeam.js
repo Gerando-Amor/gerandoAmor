@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import styles from "./SwiperTeam.module.css"
+import styles from "./SwiperTeam.module.css";
 import Joao from "../../img/JoaoAraujo.jpeg";
 import Kauan from "../../img/KaunMonteiro.jpeg";
 import Marcely from "../../img/MarcelyNeves.jpg";
@@ -37,11 +37,11 @@ export default function SwiperTeam() {
                     nextEl: `.${styles.button_next_team}`, // Use button_next_team para "Próximo"
                 }}
                 breakpoints={{
-                    400: {
+                    490: {
                         slidesPerView: 2,
                         spaceBetween: 10,
                     },
-                    640: {
+                    790: {
                         slidesPerView: 3,
                         spaceBetween: 20,
                     },

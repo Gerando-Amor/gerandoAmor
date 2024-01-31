@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import styles from './boxProject.module.css'
 import { useState, useEffect } from 'react';
 
-export default function BoxProject({Data}) {
+export default function BoxProject({ Data }) {
     const [imagem, setImagem] = useState(null)
 
     useEffect(() => {
@@ -22,13 +22,12 @@ export default function BoxProject({Data}) {
     }, [Data.img]);
     return (
         <div className={styles.cards_projects}>
-            <div className={classNames(styles.w100, styles.description_projects)}>
+            <div className={classNames(styles.w50, styles.description_projects)} style={{ backgroundColor: `${Data.color}` }}>
                 <h1>{Data.tittle}</h1>
                 <p>{Data.description}</p>
+                <a href="https://wa.link/4x12gg">Saiba Mais</a>
             </div>
-            <div className={classNames(styles.w100, styles.img_projects)}>
-                <img src={imagem} alt="" />
-            </div>
+            <div className={classNames(styles.w50, styles.img_projects)} style={{ backgroundImage: `url('${imagem}')` }}></div>
         </div>
     )
 }
