@@ -7,9 +7,9 @@ function SectionProjects() {
 
 
     return (
-        <section className={classNames(styles.section_projects,)}>
+        <section className={classNames(styles.section_projects)}>
             <div className={classNames(styles.container_projects)}>
-                <div className={styles.divh1_projects}>
+                <div className={styles.tittle_projects}>
                     <h1>Nossos Projetos</h1>
                 </div>
                 {

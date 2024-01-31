@@ -22,13 +22,11 @@ export default function BoxProject({Data}) {
     }, [Data.img]);
     return (
         <div className={styles.cards_projects}>
-            <div className={classNames(styles.w100, styles.description_projects)}>
+            <div className={classNames(styles.w50, styles.description_projects)} style={{ backgroundColor: `${Data.color}`}}>
                 <h1>{Data.tittle}</h1>
                 <p>{Data.description}</p>
             </div>
-            <div className={classNames(styles.w100, styles.img_projects)}>
-                <img src={imagem} alt="" />
-            </div>
+            <div className={classNames(styles.w50, styles.img_projects)} style={{ backgroundImage: `url('${imagem}')`}}></div>
         </div>
     )
 }

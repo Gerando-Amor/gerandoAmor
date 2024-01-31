@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import styles from "./SwiperTeam.module.css"
+import styles from "./SwiperTeam.module.css";
 import Joao from "../../img/JoaoAraujo.jpeg";
 import Kauan from "../../img/KaunMonteiro.jpeg";
 import Marcely from "../../img/MarcelyNeves.jpg";
