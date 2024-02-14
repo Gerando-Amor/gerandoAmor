@@ -8,7 +8,6 @@ import handshake from "../../img/handshake.svg"
 
 // Import Style
 import style from "./SectionCards.module.css"
-import { Link } from "react-router-dom"
 
 function SectionCards (){
 
@@ -28,9 +27,9 @@ function SectionCards (){
 
                     <div className={style.btnsCards}>
 
-                        <Link className={style.knowMore} to='/Voluntario' >
+                        <a className={style.knowMore} href="Voluntario" target="_blank">
                             Voluntariado
-                        </Link>
+                        </a>
 
                     </div>
                 </div>
@@ -46,9 +45,9 @@ function SectionCards (){
                     </p>
                     <div className={style.btnsCards}>
 
-                        <Link className={style.knowMore} to='/Associado'>
+                        <a className={style.knowMore} href="Associado" target="_blank">
                             Saiba Mais
-                        </Link>
+                        </a>
 
                     </div>
 
