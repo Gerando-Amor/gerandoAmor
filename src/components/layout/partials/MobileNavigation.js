@@ -8,10 +8,10 @@ export default function MobileNavigation({ abrirmenu }) {
   return (
     <div className={styles.modal}>
       <ul>
-        {Nav.map((Nav) => (
-          <li>
-            <Link onClick={() => abrirmenu()} to={Nav.url}>
-              {Nav.label}
+        {Nav.map((navItem) => (
+          <li key={navItem.id}>
+            <Link to={navItem.url} onClick={() => abrirmenu()}>
+              {navItem.label}
             </Link>
           </li>
         ))}
