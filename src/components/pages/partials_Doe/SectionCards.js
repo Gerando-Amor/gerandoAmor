@@ -28,7 +28,7 @@ function SectionCards (){
 
                     <div className={style.btnsCards}>
 
-                        <Link className={style.knowMore} to='/Voluntario' >
+                        <Link className={style.knowMore} to='/Voluntario'>
                             Voluntariado
                         </Link>
 

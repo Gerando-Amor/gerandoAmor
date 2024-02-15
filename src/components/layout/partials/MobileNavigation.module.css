@@ -5,8 +5,6 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    
-    
 }
 
 .modal ul{
@@ -35,4 +33,3 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
-
