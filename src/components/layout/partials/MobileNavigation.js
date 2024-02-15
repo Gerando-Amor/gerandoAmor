@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './MobileNavigation.module.css'
 import Nav from "../../../Data/NavigationData"
-import { useState } from 'react';
 import { Link } from 'react-router-dom'; 
 
 export default function MobileNavigation({ abrirmenu }) {
@@ -24,7 +23,7 @@ export default function MobileNavigation({ abrirmenu }) {
                     ))
                 }
             </ul>
-            <button onClick={() => abrirmenu()}>Fechar Mobile Navigation</button>
+            <button onClick={() => abrirmenu()}> Fechar </button>
         </div>
     )
 }
