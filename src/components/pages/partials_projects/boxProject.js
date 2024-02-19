@@ -20,6 +20,8 @@ export default function BoxProject({ Data }) {
         // Chama a função para carregar a imagem ao montar o componente
         carregarImagem();
     }, [Data.img]);
+
+    
     return (
         <div className={styles.cards_projects}>
             <div className={classNames(styles.w50, styles.description_projects)} style={{ backgroundColor: `${Data.color}` }}>

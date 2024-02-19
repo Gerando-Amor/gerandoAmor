@@ -16,6 +16,7 @@ function SectionCards (){
 
         <section className={style.sectionLayout}>
 
+
             <div className={style.cardsLayout}>
     
                 <div className={style.projectInfo}>
@@ -54,6 +55,7 @@ function SectionCards (){
 
                 </div>
             </div>
+            
 
             <div className={style.cardDif}>    
                 <div className={style.infosCard}>
@@ -75,6 +77,8 @@ function SectionCards (){
                     <img className={style.cardImage} src={Comunidade} alt="Comunidade"/>
                 </div>
             </div>
+
+            
         </section>
     );
 };

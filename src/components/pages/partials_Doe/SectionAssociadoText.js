@@ -1,20 +1,18 @@
 // Import Style
 import style from "./SectionAssociadoText.module.css"
 
-// Import Img
-import retangulo from "../../img/Rectangle2.svg"
 
-function SectionVoluntariosText (){
+
+function SectionAssociadoText (){
 
     return(
-        <section>
+        <section className={style.Section_AssociadoText}>
+            <div className={style.Container_AssociadoText}>
+                
             <div className={style.List}>
-                
-                
                 <ul>
-                    <div>
+                    <div className={style.Div_h1}>
                         <h1> O que é ser um Associado? </h1>
-                        <img className={style.Subimg} src={retangulo} alt=""/>
                     </div>
                     
                     <li>
@@ -41,9 +39,10 @@ function SectionVoluntariosText (){
                     Quero me Associar!
                 </a>
             </div>
+            </div>
 
         </section>
     )
 }
 
-export default SectionVoluntariosText
+export default SectionAssociadoText

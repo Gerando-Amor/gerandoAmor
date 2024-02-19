@@ -152,3 +152,24 @@
 
     
 }
+
+@media(max-width:560px){
+
+    .cardDif{
+        justify-content: center;
+    }
+
+    .cardImage{
+        width: 200px;
+        height: 273px;
+    
+    }
+    .infosCard{
+        border: 1px solid #000;
+        background: #FFE500;
+        color:#000000;
+        width: 200px;
+        
+    }
+    
+}
