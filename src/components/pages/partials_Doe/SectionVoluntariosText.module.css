@@ -2,40 +2,57 @@ body {
     font-family: "Aoboshi One";
 }
 
-.List h1{
-    font-size: 25px;
-    margin-bottom: -10px;
+.Section_VoluntariosText{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    max-width: 100%;
+  
 }
 
-.Subimg{
-    margin-top: -10px;
-    width: 320px;
+.Container_VoluntariosText{
+
+    align-items: center;
+    max-width: calc(1200px + 4%);
+
 }
 
-.List ul{
+.List{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    
 }
+
+.Div_h1{
+    display: flex;
+    
+    
+}
+
+.Div_h1 h1{
+    font-size: 25px;
+    margin-bottom: 1px;
+    border-bottom: 4px solid #ffbb34;
+}
+
+
 
 .List li{
     margin: 15px;
     margin-top: 20px;
     font-size: 15px;
-    text-align: justify;
+
 }
 
-.List{
-    display: flex;
-    justify-content: center;
-    height: 308px;
-}
+
 
 
 .btnsDiv{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     
 
 }
@@ -47,6 +64,7 @@ body {
     padding: 10px 30px;
     text-decoration: none;
     color: #000000;
+    
 }
 
 .stylea a{
@@ -54,5 +72,13 @@ body {
     font-size: 16px;
     font-weight: 600;
     display: flex;
+}
+
+@media screen and (max-width: 400px){
+
+    .Div_h1 h1{
+        font-size: 20px;
+        text-align: center;
+    }
 
 }

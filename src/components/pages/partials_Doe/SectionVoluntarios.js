@@ -7,10 +7,9 @@ import style from "./SectionVoluntarios.module.css"
 function SectionVoluntarios () {
 
     return(
+       
         <section>
-
             <div className={style.BackgroundImg}></div>
-
         </section>
 
     );

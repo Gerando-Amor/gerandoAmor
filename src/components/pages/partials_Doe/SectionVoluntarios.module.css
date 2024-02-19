@@ -6,16 +6,19 @@ section{
     background-image: URL("../../img/background_voluntario.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: width 100;
     width: 100%;
     height: 361px;
 }
 
 
 
-@media(max-width:1200px){
+@media(max-width: 1200px){
     .BackgroundImg{
         width: 100%;
         height: 200px;
     }
+    
 
 }
