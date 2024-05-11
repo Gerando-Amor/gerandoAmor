@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     margin: 20px 0;
 }
+
+.cards_projects h6{
+    color: coral;
+}
 .description_projects{
     min-height: 250px;
     padding: 10px 0;
