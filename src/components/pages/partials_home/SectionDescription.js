@@ -27,8 +27,7 @@ function SectionDescription() {
           </p>
         </div>
         <div className={classNames(styles.w50, styles.imagequemsomos)}>
-          {(resultados.length === 2) |
-          resultados.every((res) => res === true) ? (
+          {resultados.length === 2? (
             <img src={QuemSomos} alt="" srcset="" />
           ) : (
             <>
@@ -52,9 +51,8 @@ function SectionDescription() {
               styles.imagetransformamos
             )}
           >
-            {(resultados.length === 2) |
-            resultados.every((res) => res === true) ? (
-              <img src={InicioDoProjeto} alt="" srcset="" />
+            {resultados.length === 2? (
+              <img src={InicioDoProjeto} alt="" srcset=""/>
             ) : (
               <>
                 <img
