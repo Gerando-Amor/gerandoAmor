@@ -5,14 +5,22 @@ import SectionDescription from "./partials_home/SectionDescription";
 import SectionTeam from "./partials_home/SectionTeam";
 import SectionMission from "./partials_home/SectionMission";
 import SectionObjective from "./partials_home/SectionObjective";
+import { Helmet } from "react-helmet";
 function Home() {
   return (
     <main className={styles.main}>
-      <SectionBanner/>
-      <SectionDescription/>
-      <SectionTeam/>
-      <SectionMission/>
-      <SectionObjective/>
+      <Helmet>
+        <title>Inicio</title>
+        <meta
+          name="description"
+          content="Gerando Amor é uma ONG que transforma vidas através do Evangelho. Conheça nossa equipe, missão e projetos. Juntos Fazemos a Diferença."
+        />
+      </Helmet>
+      <SectionBanner />
+      <SectionDescription />
+      <SectionTeam />
+      <SectionMission />
+      <SectionObjective />
     </main>
   );
 }
