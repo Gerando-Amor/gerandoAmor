@@ -12,8 +12,8 @@
 
 .onload {
   display: inline-block;
-  width: 90%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   border-top-left-radius: 30%; /* Canto superior esquerdo */
   border-bottom-right-radius: 30%; /* Canto inferior direito */
   background: linear-gradient(90deg, #f0f0f0 25%, #f8f8f8 50%, #f0f0f0 75%);
@@ -161,5 +161,10 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 500px){
+  .onload{
+    min-height: 260px;
   }
 }
