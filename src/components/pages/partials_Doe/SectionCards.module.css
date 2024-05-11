@@ -2,12 +2,19 @@
 
 .sectionLayout{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content:center;
     height: 500px;
     background: linear-gradient(to bottom, #1E1E1E 50%, #FFFFFF 50%);
     font-size: 65%;
+}
+.container{
+    width: 100%;
+    max-width: calc(1200px + 4%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 0;
+    align-items: center; 
+    justify-content: space-between;
 }
 
 
