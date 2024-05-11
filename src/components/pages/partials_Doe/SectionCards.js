@@ -74,9 +74,9 @@ function SectionCards() {
               </p>
             </div>
           </div>
-          <div>
+          <div className={style.cardImage}>
             <img
-              className={style.cardImage}
+              className={style.Image}
               src={Comunidade}
               alt="Comunidade"
             />
