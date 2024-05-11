@@ -5,7 +5,7 @@ import FAQData from "../../../Data/FAQData"
 export default function SectionRFAQ() {
 
     return (
-        <section className={styles.SectionBanner}>
+        <section className={styles.SectionBanner} id="perguntas">
             <div className={styles.BannerContainer}>
                 <h1 className={styles.title}>Perguntas Frequentes</h1>
                 <div className={styles.boxesfaq}>

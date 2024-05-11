@@ -15,9 +15,12 @@ const NavigationData = [
         label: 'Projetos',
         url: '/projetos',
         submenu: [
-            { id: 20, label: "Caratê", url: "#carate" },
-            { id: 21, label: "Capueira", url: "#capoeira" },
-            { id: 22, label: "Ingles", url: "#ingles" }
+            { id: 20, label: "Karatê", url: "#project1" },
+            { id: 21, label: "Capoeira", url: "#project2" },
+            { id: 22, label: "Teatro", url: "#project3" },
+            { id: 23, label: "Musica", url: "#project4" },
+            { id: 24, label: "Esporte e Atividade Física", url: "#project5" },
+            { id: 25, label: "Corte Solidário", url: "#project6" }
         ]
     },
     {
@@ -25,8 +28,9 @@ const NavigationData = [
         label: 'Contato',
         url: '/contato',
         submenu: [
-            { id: 30, label: "Localização", url: "#localizacao" },
-            { id: 31, label: "FAQ", url: "#faq" },
+            { id: 30, label: "Localização", url: "#mapa" },
+            { id: 31, label: "Perguntas Frequentes", url: "#perguntas" },
+            { id: 32, label: "Formulario de Iscrição", url: "#formulario" },
         ]
     },
     {

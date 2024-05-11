@@ -2,7 +2,7 @@ import styles from "./SectionMap.module.css"
 import React from 'react'
 export default function SectionMap() {
   return (
-    <section className={styles.SectionMap}>
+    <section className={styles.SectionMap} id="mapa">
       <div className={styles.MapContainer}>
         <h3>Venha fazer uma visita,<br /> saiba onde estamos localizados</h3>
         <a

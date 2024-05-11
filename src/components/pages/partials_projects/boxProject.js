@@ -23,7 +23,7 @@ export default function BoxProject({ Data }) {
 
     
     return (
-        <div className={styles.cards_projects}>
+        <div className={styles.cards_projects} id={`project${Data.id}`}>
             <div className={classNames(styles.w50, styles.description_projects)} style={{ backgroundColor: `${Data.color}` }}>
                 <h1>{Data.tittle}</h1>
                 <p>{Data.description}</p>
